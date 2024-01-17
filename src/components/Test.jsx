@@ -10,10 +10,10 @@ const Test = () => {
       <Container>
         <>
           <div>
-            <h2 className="text-[28px] sm:text-4xl md:text-5xl text-[#152432] text-center font-semibold leading-[1.45]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#152432] text-center font-semibold leading-[1.45]">
               Why Choose Maviyom
             </h2>
-            <p className=" text-[#5d6165] text-center  text-sm sm:text-base leading-5 mt-2 ">
+            <p className=" text-[#5d6165] text-center text-base leading-5 mt-2 ">
               Unmatched Aerial Excellence
             </p>
 
@@ -24,10 +24,10 @@ const Test = () => {
             </div>
             <div className="relative mt-4 md:mt-8 grid   max-w-[1250px] gap-2 md:gap-5  lg:mx-auto lg:grid-cols-2 lg:gap-40">
               <div className="content grid  gap-2 md:gap-5 pb-10 ">
-                <h3 className="text-2xl  md:text-3xl lg:text-4xl font-bold text-[#1b243f]">
+                <h3 className="text-[26px]  md:text-3xl lg:text-4xl font-bold text-[#1b243f]">
                   Our Pledge: Exceptional Drones & Expertise
                 </h3>
-                <p className="text-base text-[#5b6278]  ">
+                <p className="text-lg md:text-base my-2 md:my-0 text-gray-600  ">
                   At Maviyom Aviation, we're elevating drone technology new
                   heights with relentless innovation and unwavering quality. We
                   design specialized solutions for diverse sectors, integrating
@@ -85,8 +85,8 @@ const Test = () => {
                   alt="about"
                   className="h-80 md:h-full w-full rounded-md   object-cover  "
                 />
-                <div className="absolute bottom-0  left-0 z-10 bg-secondary w-full max-w-[180px] md:max-w-[260px] px-[5%]    py-[2%] md:py-[5%] border-[5px] border-white   rounded-2xl ">
-                  <h3 className="  text-[#f8f8f8]  md:text-xl  font-semibold ">
+                <div className="absolute bottom-0  left-0 z-10 bg-secondary w-full max-w-[180px] md:max-w-[260px] px-[5%]    py-[5%] border-[5px] border-white   rounded-2xl ">
+                  <h3 className="  text-[#f8f8f8]  text-xl  font-semibold ">
                     Join us in shaping the future of drone innovation
                   </h3>
                 </div>

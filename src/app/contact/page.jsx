@@ -12,7 +12,7 @@ const page = () => {
 
         <div className="w-full max-w-3xl mx-auto">
           <p
-            className={` text-[#353535] pb-5  text-base text-center
+            className={` text-[#353535] pb-5 text-lg md:text-base text-center
             `}
           >
             Connect with Maviyom Aviation Pvt. Ltd. – we’re here to listen.

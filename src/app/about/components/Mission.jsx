@@ -103,12 +103,12 @@ const Mission = () => {
       <div className="bg-white font-sans  flex max-lg:flex-col p-4 md:p-10 my-8 gap-4 md:gap-6 lg:gap-8 xl:gap-10">
         <div className="lg:max-w-md mx-auto">
           <h2
-            className="relative text-3xl md:text-5xl font-bold text-[#1b243f] after:absolute after:left-0 after:top-full after:h-[3px]
+            className="relative text-4xl md:text-5xl font-bold text-[#1b243f] after:absolute after:left-0 after:top-full after:h-[3px]
 after:w-[40px] after:rounded-3xl after:bg-primary after:content-[''] "
           >
             Our <em>Mission</em>
           </h2>
-          <p className="text-text-secondary text-sm my-7">
+          <p className="text-text-secondary text-lg md:text-sm my-7">
             We are dedicated to elevating the potential of industries and
             individuals with cutting-edge drone (UAV) technology. Our pursuit is
             to not just innovate, but to redefine possibilities. .

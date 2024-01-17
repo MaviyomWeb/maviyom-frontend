@@ -171,13 +171,13 @@ const ContactForm = () => {
           value={contactDetails.message}
           onChange={handleInput}
           placeholder="Message"
-          className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+          className="flex h-32 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
           cols={3}
         ></textarea>
       </div>
       <button
         type="submit"
-        className="mt-8 flex items-center justify-center text-sm w-full rounded px-4 py-2.5 font-semibold bg-secondary text-white hover:opacity-90 "
+        className="mt-8 flex items-center justify-center md:text-sm w-full rounded px-4 py-2.5 font-semibold bg-secondary text-white hover:opacity-90 "
       >
         Reach Out Now
         <IoIosSend className="text-xl fill-white ml-2" />

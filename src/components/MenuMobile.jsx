@@ -12,7 +12,7 @@ const MenuMobile = ({
 }) => {
   return (
     <ul
-      className={`flex flex-col gap-4  p-5 950Screen:hidden  font-semibold absolute top-[60px] left-0 w-full h-[calc(100vh-60px)]
+      className={`flex flex-col gap-4  p-5 950Screen:hidden  font-medium absolute top-[60px] left-0 w-full h-[calc(100vh-60px)]
       bg-white border-t text-secondary overflow-y-auto
             `}
     >
@@ -25,7 +25,7 @@ const MenuMobile = ({
                 onClick={() => setShowCatMenu((prev) => !prev)}
               >
                 <div
-                  className={`cursor-pointer  flex text-lg  items-center justify-between ${
+                  className={`cursor-pointer  flex text-xl  items-center justify-between ${
                     showCatMenu ? "text-primary" : "text-secondary"
                   } `}
                 >
@@ -51,7 +51,7 @@ const MenuMobile = ({
                         <div className="dropdown-inner">
                           <div className="dropdown-item">
                             <h3
-                              className="relative item-heading mt-2 mb-3     text-secondary font-semibold *:
+                              className="relative item-heading mt-2 mb-3  text-lg    text-secondary font-semibold *:
                             after:content-[''] after:absolute after:top-full after:left-0 after:h-[3px] after:w-8 after:bg-primary
                             "
                             >
@@ -87,10 +87,10 @@ const MenuMobile = ({
                                       />
                                     </span>
                                     <span className=" flex-grow text-center">
-                                      <span className="mb-1 block text-lg font-semibold text-dark group-hover/link:text-secondary ">
+                                      <span className="mb-1 block text-xl font-semibold text-dark group-hover/link:text-secondary ">
                                         {product?.label}
                                       </span>
-                                      <span className="block text-[14px] text-[#9597a8]">
+                                      <span className="block  font-medium text-gray-600">
                                         {product?.description}
                                       </span>
                                     </span>
@@ -113,7 +113,7 @@ const MenuMobile = ({
                     setShowCatMenu(false);
                     setMobileMenu(false);
                   }}
-                  className=" transition-colors ease-in-out duration-150 text-lg hover:text-primary "
+                  className=" transition-colors ease-in-out duration-150 text-xl hover:text-primary "
                 >
                   {item.label}
                 </Link>

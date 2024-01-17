@@ -14,7 +14,7 @@ const TeamCard = ({ member }) => {
         <h3 class="text-secondary font-poppins text-center text-lg font-semibold">
           {member.name}
         </h3>
-        <p class="text-secondary mt-2 line-clamp overflow-hidden text-ellipsis text-justify text-sm font-normal leading-5">
+        <p class="text-secondary mt-2 line-clamp overflow-hidden text-ellipsis text-justify md:text-sm font-normal leading-5">
           {member.description}
         </p>
       </div>

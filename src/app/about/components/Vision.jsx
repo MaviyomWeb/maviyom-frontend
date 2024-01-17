@@ -11,7 +11,7 @@ const Vision = () => {
     `}
         >
           <h2
-            className={`relative text-3xl md:text-5xl font-bold text-[#1b243f] after:absolute after:left-0 after:top-full after:h-[3px]
+            className={`relative text-4xl md:text-5xl font-bold text-[#1b243f] after:absolute after:left-0 after:top-full after:h-[3px]
 after:w-[40px] after:rounded-3xl after:bg-primary after:content-['']   
           
     `}
@@ -19,7 +19,7 @@ after:w-[40px] after:rounded-3xl after:bg-primary after:content-['']
             Our Vision
           </h2>
           <p
-            className={`  font-poppins  leading-7 text-[#1b243f] 
+            className={`  font-poppins  leading-7 text-[#1b243f]  text-lg md:text-base
             `}
           >
             Maviyom Aviation is on a journey to become a respected name in drone

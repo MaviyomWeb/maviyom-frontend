@@ -9,7 +9,7 @@ const GetInTouch = () => {
       <div className="grid md:grid-cols-2 gap-16 items-center relative overflow-hidden p-5 md:p-10  shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-3xl max-w-6xl mx-auto bg-white text-secondary mt-6 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:bg-blue-400 before:h-full max-md:before:hidden ">
         <div>
           <h2 className="text-3xl text-secondary font-bold">Get In Touch</h2>
-          <p className="text- text-text-secondary mt-3 ">
+          <p className="text-lg md:text-base text-text-secondary mt-3 ">
             Ready to take your ventures sky-high with cutting-edge drone
             solutions? Connect with Maviyom Aviation Pvt. Ltd.
           </p>

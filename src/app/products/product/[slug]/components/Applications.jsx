@@ -6,7 +6,7 @@ const Applications = ({ data: { attributes: product, id } }) => {
       <h2 className="heading text-[28px] md:text-4xl xl:text-5xl text-secondary  font-dmSans  md:leading-5 font-medium text-center mb-4 md:mb-8 ">
         Applications of {product?.title}
       </h2>
-      <div className="text-[#5b6278] font-sans   border-b-2 border-[#e7eaee] ">
+      <div className="text-[#5b6278] font-sans    ">
         <div>
           <ul className="md:ml-5 list-disc   grid md:grid-cols-2 gap-x-5 gap-y-2 md:gap-y-4  ">
             {product?.Applications?.applications?.map((usage, index) => {
@@ -19,7 +19,7 @@ const Applications = ({ data: { attributes: product, id } }) => {
                     <span>
                       <IoIosCheckmarkCircle className="text-2xl font-bold fill-primary" />
                     </span>
-                    <p className="font-medium md:text-lg  text-secondary">
+                    <p className="font-medium text-lg  text-secondary">
                       {usage}
                     </p>
                   </li>

@@ -12,7 +12,7 @@ const AboutHero = () => {
     
     `}
       >
-        <h4 className="relative uppercase text-sm sm:text-base text-primary font-semibold tracking-[0.3px] mb-1 md:mb-4">
+        <h4 className="relative uppercase text-base text-primary font-semibold tracking-[0.3px] mb-2 md:mb-4">
           About Company
         </h4>
         <h2
@@ -23,7 +23,7 @@ const AboutHero = () => {
           Maviyom Aviation: Elevating Innovation
         </h2>
         <p
-          className={` text-[#353535] pb-5  text-base
+          className={` text-[#353535] pb-5  text-[17px] md:text-base
             `}
         >
           At Maviyom Aviation, we are committed to transcending the ordinary.
@@ -33,27 +33,27 @@ const AboutHero = () => {
         </p>
 
         <ul className="flex flex-col gap-3 md:gap-2">
-          <li className="flex items-center gap-3  ">
+          <li className="flex items-start  gap-3  ">
             <span>
               <HiCheckBadge size={24} className="fill-primary " />
             </span>
-            <span className=" font-medium text-[#0f110f]  font-dmSans ">
+            <span className=" font-medium text-[#0f110f] text-lg md:text-base  font-poppins ">
               Forefront of Drone Innovation
             </span>
           </li>
-          <li className="flex items-center gap-3 ">
+          <li className="flex items-start  gap-3 ">
             <span>
               <HiCheckBadge size={24} className="fill-primary " />
             </span>
-            <span className="font-medium text-[#0f110f]  font-dmSans ">
+            <span className="font-medium text-[#0f110f] text-lg md:text-base  font-poppins ">
               Revolutionizing Industries
             </span>
           </li>
-          <li className="flex items-center gap-3 ">
+          <li className="flex items-start  gap-3 ">
             <span>
               <HiCheckBadge size={24} className="fill-primary  " />
             </span>
-            <span className="font-medium text-[#0f110f]  font-dmSans ">
+            <span className="font-medium text-[#0f110f] text-lg md:text-base  font-poppins ">
               Global Ambition in Drone Excellence
             </span>
           </li>

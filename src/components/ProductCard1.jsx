@@ -8,7 +8,9 @@ const ProductCard1 = ({ data: { attributes: product, id } }) => {
         className={`relative group aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md  lg:aspect-none group-hover:opacity-75  lg:w-[450px]  mx-auto
          
 
-        h-full sm:h-[200px] ${product?.title === "Maviyom 25L" ?  "h-[64px]" : ""}
+        h-full sm:h-[200px] ${
+          product?.title === "Maviyom 25L" ? "h-[64px]" : ""
+        }
         
         `}
       >
@@ -19,10 +21,10 @@ const ProductCard1 = ({ data: { attributes: product, id } }) => {
         />
       </div>
       <div className="p-4 flex flex-col items-center justify-center">
-        <div className=" space-y-4">
+        <div className="space-y-3 md:space-y-4">
           <h1
-            className=" inline-flex items-center  text-secondary  text-xl  md:text-3xl font-semibold  gap-1 
-                          transition-all ease-in-out duration-200 "
+            className=" inline-flex items-center  text-secondary  text-2xl  md:text-3xl font-semibold  gap-1 
+                          transition-all ease-in-out duration-200  "
           >
             {product?.title}
             <span className="hidden sm:block">
@@ -43,12 +45,12 @@ const ProductCard1 = ({ data: { attributes: product, id } }) => {
               </svg>
             </span>
           </h1>
-          <p className=" md:mt-3 max-w-[400px] mx-auto text-sm text-balance md:text-center text-gray-600">
+          <p className=" md:mt-3 max-w-md mx-auto md:text-sm  text-gray-600">
             {product?.short_description}
           </p>
           <Link
             href={`/products/product/${product?.slug}`}
-            className="flex max-w-max mx-auto place-content-center mt-3 xs:mt-5 mb-2 items-center justify-center whitespace-nowrap border-2 border-secondary text-secondary hover:text-white hover:bg-secondary  font-medium px-4 py-2 rounded-full transition-all ease-in-out duration-200"
+            className="flex max-w-max mx-auto place-content-center mt-3 md:mt-5 mb-2 items-center justify-center whitespace-nowrap border-2 border-secondary text-secondary hover:text-white hover:bg-secondary  font-medium px-4 py-2 rounded-full transition-all ease-in-out duration-200"
           >
             Know More
           </Link>
