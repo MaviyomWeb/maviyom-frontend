@@ -14,9 +14,9 @@ const About = () => {
 
           <div className="pb-10 md:pb-20">
             <img
-              src="https://maviyom.com/wp-content/uploads/2023/07/About-Banner-1-1536x679.png"
+              src="/Maviyom Aviation.jpg"
               alt="about"
-              className=" h-[200px] md:h-auto  md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg mx-auto"
+              className="rounded-lg h-[200px] md:h-auto  md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg mx-auto"
             />
             <p className="text-center mt-4  md:mt-8 max-w-7xl mx-auto  text-[15px] md:text-base  leading-7 text-[#1b243f]">
               Maviyom Aviation is an emerging leader in the drone manufacturing

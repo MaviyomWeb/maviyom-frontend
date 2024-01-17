@@ -1,5 +1,4 @@
 import Container from "@/components/Container";
-import DroneSpecsTable from "@/components/DroneSpecsTable";
 import React from "react";
 import GCSItem from "./GCSItem";
 
@@ -12,9 +11,9 @@ const GCS = () => {
         <div className="relative h-64 md:h-[350px]">
           <div className="absolute left-0 top-0 h-full w-full overflow-hidden">
             <img
-              src="https://maviyom.com/wp-content/uploads/2023/07/GCS-1.png?id=2411"
+              src="/mission-img.jpg"
               alt="GCS"
-              className="h-full w-full object-cover object-top"
+              className="h-full w-full object-cover object-center"
             />
           </div>
           {/* Overlay */}
