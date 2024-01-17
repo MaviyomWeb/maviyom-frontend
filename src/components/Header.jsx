@@ -42,7 +42,7 @@ const Header = () => {
             <img
               src="/logo.png"
               alt="logo"
-              className="h-full w-32 950Screen:w-36   object-cover "
+              className="h-full w-36 950Screen:w-40   object-cover "
             />
           </Link>
 
