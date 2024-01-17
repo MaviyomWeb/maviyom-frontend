@@ -44,9 +44,9 @@ const ContactAddress = () => {
                   Our Locations
                 </h3>
               </div>
-              {locations.map((location) => (
+              {locations.map((location, index) => (
                 <div
-                  key={location.title}
+                  key={index}
                   className="flex flex-col space-y-2 pt-4 first:pt-0 lg:w-full"
                 >
                   <p className="w-full text-xl font-semibold  text-secondary">

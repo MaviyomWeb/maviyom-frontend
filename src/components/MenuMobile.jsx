@@ -4,7 +4,6 @@ import { NAV_LINKS, SUB_NAV_LINKS } from "@/constants";
 import Link from "next/link";
 import { BsChevronDown } from "react-icons/bs";
 
-
 const MenuMobile = ({
   showCatMenu,
   setShowCatMenu,

@@ -14,6 +14,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="apple-touch-icon"
+          href="/meta-logo.png"
+          type="image/png"
+          sizes="180x180"
+        />
+      </head>
       <body className={`${inter.className} bg-white`}>
         {/* <Navbar /> */}
         <Header />

@@ -29,7 +29,7 @@ const Specs = () => {
             {Hero_Specs.map((spec) => {
               return (
                 <div
-                  key={spec.key}
+                  key={spec.id}
                   className={` relative px-6 py-5 md:p-5     rounded-md border flex flex-col items-start  justify-center gap-1 md:gap-2  `}
                 >
                   <span className="absolute top-[10%] right-[10%] bg-text-primary px-3 py-1 text-sm font-medium text-gray-100 rounded-full">
