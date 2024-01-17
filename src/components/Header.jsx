@@ -38,7 +38,7 @@ const Header = () => {
     >
       <Container>
         <div className=" flex items-center justify-between">
-          <Link href="/">
+          <Link href="/" onClick={() => setMobileMenu(false)}>
             <img
               src="/logo.png"
               alt="logo"
@@ -47,7 +47,6 @@ const Header = () => {
           </Link>
 
           <nav>
-            
             <Menu showCatMenu={showCatMenu} setShowCatMenu={setShowCatMenu} />
             {mobileMenu && (
               <MenuMobile
