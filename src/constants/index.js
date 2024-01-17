@@ -67,11 +67,11 @@ export const SUB_NAV_LINKS = [
       },
       {
         id: crypto.randomUUID(),
-        href: "/products/product/maviyom-vtol-3800-h",
+        href: "/products/product/maviyom-vtol-3900-h",
         label: "Maviyom VTOL 3900-H",
         description:
           "Pioneering long-duration flights for comprehensive mapping and critical data collection.",
-        image: "/VTOL-3800H.jpg",
+        image: "/VTOL-3900H.jpg",
       },
     ],
   },
