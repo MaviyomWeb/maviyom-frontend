@@ -1,0 +1,90 @@
+import Link from "next/link";
+import React from "react";
+import { HiCheckBadge } from "react-icons/hi2";
+import { MdArrowRight } from "react-icons/md";
+
+const AboutHero = () => {
+  return (
+    <div className="flex flex-wrap flex-grow flex-shrink flex-auto  items-center pt-4 md:pt-10 pb-10 md:pb-20">
+      <div
+        className={`content md:w-1/2 md:pr-[32px] lg:pr-[64px] xl:pr-[100px] flex flex-col
+         
+    
+    `}
+      >
+        <h4 className="relative uppercase text-sm sm:text-base text-primary font-semibold tracking-[0.3px] mb-1 md:mb-4">
+          About Company
+        </h4>
+        <h2
+          className={` relative text-3xl md:text-4xl lg:text-4xl  xl:text-5xl font-deca capitalize font-semibold leading-10 md:leading-[54px]  tracking-[-.92px] text-[#1b243f] mb-2 md:mb-5
+          
+    `}
+        >
+          Maviyom Aviation: Elevating Innovation
+        </h2>
+        <p
+          className={` text-[#353535] pb-5  text-base
+            `}
+        >
+          At Maviyom Aviation, we are committed to transcending the ordinary.
+          Our aim is not merely to provide efficient and effective services but
+          to do so with elegance and precision, ensuring an unparalleled
+          experience for our clients.
+        </p>
+
+        <ul className="flex flex-col gap-3 md:gap-2">
+          <li className="flex items-center gap-3  ">
+            <span>
+              <HiCheckBadge size={24} className="fill-primary " />
+            </span>
+            <span className=" font-medium text-[#0f110f]  font-dmSans ">
+              Forefront of Drone Innovation
+            </span>
+          </li>
+          <li className="flex items-center gap-3 ">
+            <span>
+              <HiCheckBadge size={24} className="fill-primary " />
+            </span>
+            <span className="font-medium text-[#0f110f]  font-dmSans ">
+              Revolutionizing Industries
+            </span>
+          </li>
+          <li className="flex items-center gap-3 ">
+            <span>
+              <HiCheckBadge size={24} className="fill-primary  " />
+            </span>
+            <span className="font-medium text-[#0f110f]  font-dmSans ">
+              Global Ambition in Drone Excellence
+            </span>
+          </li>
+        </ul>
+        <div className="mt-6">
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center   text-white bg-[#0D0C22]  px-6 py-3  md:px-[1.875rem] md:py-4 rounded-[30px] hover:opacity-90 active:opacity-90"
+          >
+            <span className="whitespace-nowrap tracking-widest capitalize text-sm font-semibold">
+              Discover More
+            </span>
+
+            <span className="text-xl">
+              <MdArrowRight />
+            </span>
+          </Link>
+        </div>
+      </div>
+
+      <div className="hidden md:block md:w-1/2">
+        <div className="img-container  w-full h-[300px]  md:h-[400px] xl:h-[444px] max-w-[728px] border-4 border-white overflow-hidden rounded-2xl">
+          <img
+            src="/about-hero-img.png"
+            alt="deigns"
+            className="h-full w-full object-cover object-center"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutHero;

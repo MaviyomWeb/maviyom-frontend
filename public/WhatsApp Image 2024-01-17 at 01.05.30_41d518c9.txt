@@ -1,0 +1,25 @@
+MAVIYOM Maviyom x8 Cargo Drone Where Technology Takes Wings
+Aviation Pvt. Ltd.
+
+Technical Specifications:
+* Model Type: Octocopter
+* Max Payload : 10-15 kg
+* Max Takeoff Weight : 45 kg
++ Avg Flight Time: 45-60 minutes
+* — Range with Load: 10 km
+* Propulsion System: 8x Brushless Motors
++ Arm Length: 120 cm (Engine to Engine)
+* Propeller Dimensions: 28 in (Minimum)
+* GCS (Options): 15.6 in Screen PC or Tablet,
+10 in Screen PC
+16 Channel RC (10 km Range) ===
+* Camera (Options): 10x/30x Zoom,
+Dual Sensor (Day and Night),
+
+Full HD or 4K G
+
+LSS
+
+y/
+
+Payload/Camera Gcs
