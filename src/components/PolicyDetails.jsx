@@ -4,7 +4,7 @@ const PolicyDetails = ({ title, info, sections }) => {
   return (
     <section className="max-w-[75rem] mx-auto">
       <h2
-        className={`mt-20 md:mt-28 relative text-3xl md:text-[2rem]   font-roboto capitalize font-semibold leading-10 md:leading-[1.2]   text-secondary  mb-3 md:mb-6  
+        className={`relative text-3xl md:text-[2rem]   font-roboto capitalize font-semibold leading-10 md:leading-[1.2]   text-secondary  mb-3 md:mb-6  
           
     `}
       >
