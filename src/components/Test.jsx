@@ -27,7 +27,7 @@ const Test = () => {
                 <h3 className="text-[26px]  md:text-3xl lg:text-4xl font-bold text-[#1b243f]">
                   Our Pledge: Exceptional Drones & Expertise
                 </h3>
-                <p className="text-lg md:text-base my-2 md:my-0 text-gray-600  ">
+                <p className="text-lg md:text-base my-2 md:my-0 text-gray-800  ">
                   At Maviyom Aviation, we're elevating drone technology new
                   heights with relentless innovation and unwavering quality. We
                   design specialized solutions for diverse sectors, integrating
@@ -45,13 +45,15 @@ const Test = () => {
                     <span>
                       <IoIosCheckmarkCircle className="text-2xl font-bold fill-primary" />
                     </span>
-                    <p className="font-medium text-text">Design Excellence</p>
+                    <p className="font-medium text-secondary text-lg md:text-base">
+                      Design Excellence
+                    </p>
                   </li>
                   <li className="flex items-center gap-2">
                     <span>
                       <IoIosCheckmarkCircle className="text-2xl font-bold fill-primary" />
                     </span>
-                    <p className="font-medium text-text">
+                    <p className="font-medium text-secondary text-lg md:text-base">
                       Engineered with Intent
                     </p>
                   </li>
@@ -59,13 +61,17 @@ const Test = () => {
                     <span>
                       <IoIosCheckmarkCircle className="text-2xl font-bold fill-primary" />
                     </span>
-                    <p className="font-medium text-text">Impactful Reach</p>
+                    <p className="font-medium text-secondary text-lg md:text-base">
+                      Impactful Reach
+                    </p>
                   </li>
                   <li className="flex items-center gap-2">
                     <span>
                       <IoIosCheckmarkCircle className="text-2xl font-bold fill-primary" />
                     </span>
-                    <p className="font-medium text-text">Forward Momentum</p>
+                    <p className="font-medium text-secondary text-lg md:text-base">
+                      Forward Momentum
+                    </p>
                   </li>
                 </ul>
 
@@ -85,7 +91,7 @@ const Test = () => {
                   alt="about"
                   className="h-80 md:h-full w-full rounded-md   object-cover  "
                 />
-                <div className="absolute bottom-0  left-0 z-10 bg-secondary w-full max-w-[180px] md:max-w-[260px] px-[5%]    py-[5%] border-[5px] border-white   rounded-2xl ">
+                <div className="absolute bottom-0  left-0 z-10 bg-secondary w-full max-w-[240px] md:max-w-[260px] px-[5%]  py-[5%] md:py-[2%]   lg:py-[5%] border-[5px] border-white   rounded-2xl ">
                   <h3 className="  text-[#f8f8f8]  text-xl  font-semibold ">
                     Join us in shaping the future of drone innovation
                   </h3>

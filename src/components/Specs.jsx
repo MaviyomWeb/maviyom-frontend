@@ -20,8 +20,8 @@ const Specs = () => {
               <h2 className="h2 title section-title my-3 lg:mt-5 lg:mb-4 xl:mb-3 2xl:my-3 text-secondary text-[36px] sm:text-3xl md:text-4xl lg:text-5xl    font-semibold ">
                 Elevate Your Operations
               </h2>
-              <p className="section-text text-lg md:text-base text-[#5d6165]  mb-5 xl:mb-3  leading-7">
-                Harness our drones' advanced capabilities for superior
+              <p className="section-text text-lg xs:text-base text-[#5d6165]  mb-5 xl:mb-3  leading-7">
+                Harness our drone's advanced capabilities for superior
                 performance and reliability in every mission.
               </p>
             </div>

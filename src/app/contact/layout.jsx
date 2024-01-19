@@ -1,9 +1,6 @@
 import ContactHeader from "./components/ContactHeader";
 
-export const metadata = {
-  title: "Mega Navbar",
-  description: "Creating a Navbar - MegaMenu",
-};
+
 
 function ContactLayout({ children }) {
   return (

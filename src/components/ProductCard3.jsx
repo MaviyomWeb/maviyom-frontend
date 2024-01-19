@@ -1,12 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const ProductCard3 = ({ data: { attributes: product, id } }) => {
   return (
-    <div class="px-5 pt-5 pb-2 cursor-pointer overflow-hidden rounded-md  shadow-shadow-1 transition duration-500 hover:scale-105 ">
+    <div className="px-5 pt-5 pb-2 cursor-pointer overflow-hidden rounded-md  shadow-shadow-1 transition duration-500 hover:scale-105 ">
       <div className="w-full max-w-96 mx-auto">
-        <img
+        <Image
           src={product?.product_image?.data?.attributes?.url}
           alt={product?.title}
+          width={400}
+          height={200}
+          placeholder="blur"
+          blurDataURL="/1x1-ffffffff.png"
           className="h-full w-full object-cover "
         />
       </div>

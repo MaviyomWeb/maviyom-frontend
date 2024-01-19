@@ -16,14 +16,21 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+        <link
           rel="apple-touch-icon"
-          href="/meta-logo.png"
-          type="image/png"
-          sizes="180x180"
+          href="/apple-icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
         />
       </head>
-      <body className={`${inter.className} bg-white`}>
+      <body className={`${inter.className} bg-white `}>
         {/* <Navbar /> */}
+
         <Header />
         <main>
           <article>

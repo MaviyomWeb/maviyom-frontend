@@ -3,10 +3,10 @@ import React from "react";
 const Vision = () => {
   return (
     <>
-      <div className="mt-4 md:mt-10 grid justify-between  md:grid-cols-2 lg:gap-10 py-10 md:py-20 ">
+      <div className="mt-4 md:mt-10 grid justify-between  lg:grid-cols-2 lg:gap-10 py-10 md:py-20 ">
         <div
           className={`content grid gap-5  pb-10  
-          space-y-3  p-4 border-l-2 border-b-2 border-l-sky-800 border-b-sky-800
+          space-y-3  p-2 md:p-4 lg:border-l-2  lg:border-b-2 lg:border-l-sky-800  lg:border-b-sky-800
     
     `}
         >
@@ -19,7 +19,7 @@ after:w-[40px] after:rounded-3xl after:bg-primary after:content-['']
             Our Vision
           </h2>
           <p
-            className={`  font-poppins  leading-7 text-[#1b243f]  text-lg md:text-base
+            className={`  font-poppins  leading-7 text-[#1b243f]  text-lg xs:text-base
             `}
           >
             Maviyom Aviation is on a journey to become a respected name in drone
@@ -34,7 +34,7 @@ after:w-[40px] after:rounded-3xl after:bg-primary after:content-['']
           </p>
         </div>
 
-        <div className="img-container h-[280px] md:h-[400px] w-full max-w-[768px] overflow-hidden rounded-md">
+        <div className="img-container h-[280px] md:h-[400px] w-full  overflow-hidden rounded-md">
           <img
             src="/businessman-big-office.jpg"
             alt="deigns"

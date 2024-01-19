@@ -15,7 +15,7 @@ const PayloadCamera = ({ product }) => {
 
       <div className="mt-4 flex items-center justify-center">
         <Link
-          href="/payload"
+          href="/contact"
           className="px-6 py-2   font-medium text-text-primary rounded-3xl flex items-center justify-center transition-all duration-150 ease-in-out hover:text-white hover:bg-primary"
         >
           Know More
@@ -29,7 +29,7 @@ const PayloadCamera = ({ product }) => {
           return (
             <span
               key={index}
-              className="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
             >
               #{feature}
             </span>

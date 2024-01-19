@@ -19,7 +19,7 @@ const OurTeam = () => {
         </div>
       </div>
 
-      <div class="mt-12 grid gap-8 text-center sm:grid-cols-2  lg:grid-cols-4">
+      <div className="mt-12 grid gap-8 text-center sm:grid-cols-2  lg:grid-cols-4">
         {teamMembers.map((member, index) => {
           return <TeamCard key={index} member={member} />;
         })}

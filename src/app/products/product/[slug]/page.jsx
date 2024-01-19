@@ -1,9 +1,6 @@
 import Container from "@/components/Container";
 import { fetchDataFromApi } from "../../../../../utils/api";
-import {
-  default as Applications,
-  default as FixedWingsUse,
-} from "./components/Applications";
+import Applications from "./components/Applications";
 import Payload from "./components/Payload";
 import ProductDetails from "./components/ProductDetails";
 

@@ -3,6 +3,7 @@ import React from "react";
 import GCSItem from "./GCSItem";
 
 import { GCS_Details } from "@/constants";
+import Image from "next/image";
 
 const GCS = () => {
   return (
@@ -10,9 +11,11 @@ const GCS = () => {
       <section className="Ground control hero-banner ">
         <div className="relative h-64 md:h-[350px]">
           <div className="absolute left-0 top-0 h-full w-full overflow-hidden">
-            <img
+            <Image
               src="/mission-img.jpg"
               alt="GCS"
+              width="500"
+              height="350"
               className="h-full w-full object-cover object-center"
             />
           </div>

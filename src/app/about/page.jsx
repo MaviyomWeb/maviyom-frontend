@@ -18,7 +18,7 @@ const About = () => {
               alt="about"
               className="rounded-lg h-[200px] md:h-auto  md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg mx-auto"
             />
-            <p className="text-center mt-4  md:mt-8 max-w-7xl mx-auto  text-base  leading-7 text-[#1b243f]">
+            <p className="text-center mt-4  md:mt-8 max-w-7xl mx-auto  text-lg md:text-[17px]  leading-7 text-[#1b243f]">
               Maviyom Aviation is an emerging leader in the drone manufacturing
               sector, committed to innovating for the Indian skies and beyond.
               Our vision aligns with the government's aim to position India as a

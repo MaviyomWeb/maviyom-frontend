@@ -1,7 +1,6 @@
 import Container from "@/components/Container";
 import { camerasData } from "@/constants";
 import React from "react";
-import { IoIosCheckmarkCircle } from "react-icons/io";
 
 const page = () => {
   return (

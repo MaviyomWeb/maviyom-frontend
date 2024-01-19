@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -5,18 +6,20 @@ const ProductCard1 = ({ data: { attributes: product, id } }) => {
   return (
     <div className="relative p-5  group cursor-pointer ">
       <div
-        className={`relative group aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md  lg:aspect-none group-hover:opacity-75  lg:w-[450px]  mx-auto
+        className={`relative group aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md  lg:aspect-none group-hover:opacity-75  max-w-[500px]  mx-auto
          
 
-        h-full sm:h-[200px] ${
+        h-full   md:h-[220px] ${
           product?.title === "Maviyom 25L" ? "h-[64px]" : ""
         }
         
         `}
       >
-        <img
+        <Image
           src={product?.product_image?.data?.attributes?.url}
           alt={product?.title}
+          width={500}
+          height={200}
           className="h-full w-full object-cover object-center  "
         />
       </div>
@@ -45,7 +48,7 @@ const ProductCard1 = ({ data: { attributes: product, id } }) => {
               </svg>
             </span>
           </h1>
-          <p className=" md:mt-3 max-w-md mx-auto md:text-sm  text-gray-600">
+          <p className=" md:mt-3 max-w-md mx-auto   text-gray-600">
             {product?.short_description}
           </p>
           <Link

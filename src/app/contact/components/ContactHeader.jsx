@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const ContactHeader = () => {
@@ -5,9 +6,11 @@ const ContactHeader = () => {
     <section className="Contact Us hero-banner ">
       <div className="relative h-[200px] md:h-[350px]">
         <div className="absolute left-0 top-0 h-full w-full overflow-hidden">
-          <img
+          <Image
             src="/Contact-bg.png"
             alt="Contact"
+            width={500}
+            height={350}
             className="h-full w-full object-cover object-top"
           />
         </div>

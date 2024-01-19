@@ -9,7 +9,7 @@ import { MdArrowForward } from "react-icons/md";
 const Menu = ({ showCatMenu, setShowCatMenu }) => {
   return (
     <nav>
-      <ul className="hidden 950Screen:flex items-center gap-8 font-medium text-secondary">
+      <ul className="hidden 964Screen:flex items-center gap-8 font-medium text-secondary">
         {NAV_LINKS.map((item) => {
           return (
             <Fragment key={item?.id}>

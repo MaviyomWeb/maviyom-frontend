@@ -3,7 +3,7 @@ import React from "react";
 import ContactAddress from "./components/ContactAddress";
 import GetInTouch from "./components/GetInTouch";
 
-const page = () => {
+const Contact = () => {
   return (
     <>
       <Container>
@@ -30,4 +30,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Contact;

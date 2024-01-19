@@ -1,4 +1,3 @@
-import { droneSpecs } from "@/constants";
 import React from "react";
 
 const DroneSpecsTable = ({ specs }) => {
@@ -14,11 +13,11 @@ const DroneSpecsTable = ({ specs }) => {
           >
             <th
               scope="row"
-              className="px-2 sm:px-6 py-2 md:py-3 font-medium text-secondary   xs:text-base md:text-[17px]  "
+              className="px-2 sm:px-6 py-2 md:py-3 font-medium text-secondary  text-base    md:text-[17px]  "
             >
               {spec.label}:
             </th>
-            <td className=" px-2 sm:px-6 py-2 md:py-3 text-text-secondary  xs:text-base md:text-[17px] ">
+            <td className=" px-2 sm:px-6 py-2 md:py-3 text-text-secondary    md:text-[17px] ">
               {spec.value}
             </td>
           </tr>

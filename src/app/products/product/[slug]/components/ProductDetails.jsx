@@ -1,17 +1,20 @@
 import Link from "next/link";
 
 import DroneSpecsTable from "@/components/DroneSpecsTable";
+import Image from "next/image";
 
 const ProductDetails = ({ data: { attributes: product, id } }) => {
   return (
     <div>
       <div className={`  max-w-[824px] mx-auto `}>
-        <img
+        <Image
           className={`w-full h-full  bg-gray-50 object-cover   ${
-            product?.title === "Maviyom 25L" ? "h-[192px]" : ""
+            product?.title === "Maviyom 25L" ? "w-[300px] sm:w-[600px] h-[240px] mx-auto" : ""
           }`}
           src={product?.product_image?.data?.attributes?.url}
           alt={product?.title}
+          width={600}
+          height={340}
         />
       </div>
       <div className="content md:w-4/6 md:mx-auto">
