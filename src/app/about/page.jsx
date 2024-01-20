@@ -14,7 +14,7 @@ const About = () => {
 
           <div className="pb-10 md:pb-20">
             <img
-              src="/Maviyom Aviation.jpg"
+              src="/maviyom-new-home.jpg"
               alt="about"
               className="rounded-lg h-[200px] md:h-auto  md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg mx-auto"
             />

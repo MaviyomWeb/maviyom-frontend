@@ -38,7 +38,7 @@ const MenuMobile = ({
   return (
     <div className="">
       <div
-        className={`flex flex-col gap-4 964Screen:hidden  font-medium fixed top-0   right-[-390px]   w-full h-screen max-w-[390px] bg-white border-t  px-5 xs:px-8 pt-1 pb-5 overflow-y-auto  z-50 transition-all duration-[400ms] transition-cubic-out  ${
+        className={`flex flex-col gap-4 964Screen:hidden  font-medium fixed top-0   right-[-390px]   w-full h-screen max-w-[390px] bg-white border-t  px-4 xs:px-8 pt-1 pb-20 overflow-y-auto  z-50 transition-all duration-[400ms] transition-cubic-out  ${
           mobileMenu
             ? "visible duration-500 translate-x-[-390px]"
             : " invisible "
