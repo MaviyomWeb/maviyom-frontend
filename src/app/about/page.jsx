@@ -13,11 +13,11 @@ const About = () => {
           <AboutHero />
 
           <div className="pb-10 md:pb-20">
-            <div className="rounded-lg  max-w-lg">
+            <div className=" w-full sm:max-w-lg md:max-w-2xl lg:max-w-4xl  xL:max-w-5xl mx-auto">
               <img
                 src="/maviyom-new-home.jpg"
                 alt="about"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover rounded-lg"
               />
             </div>
             <p className="text-center mt-4  md:mt-8 max-w-7xl mx-auto  text-lg md:text-[17px]  leading-7 text-[#1b243f]">
