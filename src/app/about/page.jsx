@@ -13,11 +13,13 @@ const About = () => {
           <AboutHero />
 
           <div className="pb-10 md:pb-20">
-            <img
-              src="/maviyom-new-home.jpg"
-              alt="about"
-              className="rounded-lg h-[200px] md:h-auto  md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg mx-auto"
-            />
+            <div className="rounded-lg  max-w-lg">
+              <img
+                src="/maviyom-new-home.jpg"
+                alt="about"
+                className="h-full w-full object-cover"
+              />
+            </div>
             <p className="text-center mt-4  md:mt-8 max-w-7xl mx-auto  text-lg md:text-[17px]  leading-7 text-[#1b243f]">
               Maviyom Aviation is an emerging leader in the drone manufacturing
               sector, committed to innovating for the Indian skies and beyond.
