@@ -1,9 +1,9 @@
 export const NAV_LINKS = [
   { id: crypto.randomUUID(), label: "Home", href: "/" },
-  { id: crypto.randomUUID(), label: "About", href: "/about" },
+  { id: crypto.randomUUID(), label: "About", href: "/about-us" },
   { id: crypto.randomUUID(), label: "Products", subMenu: true },
-  { id: crypto.randomUUID(), label: "GCS", href: "/gcs" },
-  { id: crypto.randomUUID(), label: "Contact", href: "/contact" },
+  { id: crypto.randomUUID(), label: "GCS", href: "/ground-control-station" },
+  { id: crypto.randomUUID(), label: "Contact", href: "/contact-us" },
 ];
 
 export const SUB_NAV_LINKS = [

@@ -12,7 +12,7 @@ const PolicyDetails = ({ title, info, sections }) => {
       </h2>
 
       <div className="break-words ">
-        <p className="mb-6 text-[#67768e] text-[17px] leading-7 ">{info}</p>
+        <p className="mb-6 text-gray-600 text-[17px] leading-7 ">{info}</p>
 
         {sections.map((section, index) => (
           <PolicySection
