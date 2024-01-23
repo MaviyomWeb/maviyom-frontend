@@ -77,7 +77,7 @@ const Test = () => {
 
                 <div className="mt-4 md:mt-0">
                   <Link
-                    href="/contact"
+                    href="/contact-us"
                     className="inline-flex items-center justify-center text-secondary border-2 border-secondary     px-6 py-3   rounded-[30px] whitespace-nowrap tracking-widest capitalize text-sm font-semibold  transition-all ease-in-out duration-200 hover:text-white hover:bg-[#0D0C22]"
                   >
                     Learn More

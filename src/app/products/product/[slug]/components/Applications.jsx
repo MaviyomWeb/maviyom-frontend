@@ -1,20 +1,18 @@
-import { IoIosCheckmarkCircle } from "react-icons/io";
-
 const Applications = ({ data: { attributes: product, id } }) => {
   return (
     <>
-      <div className="mt-8 md:mt-16 px-4 w-full max-w-4xl  mx-auto pb-10 md:pb-0">
+      <div className="mt-8 md:mt-16 md::px-4 w-full max-w-md sm:max-w-4xl  mx-auto pb-10 md:pb-0">
         <h2 className="heading text-[28px] md:text-4xl xl:text-5xl text-secondary  font-dmSans  md:leading-5 font-medium text-center mb-4 md:mb-8 ">
           Applications of {product?.title}
         </h2>
         <div className="text-[#5b6278] font-sans    ">
           <div>
-            <ul className="md:ml-5 list-disc   grid 964Screen:grid-cols-2 gap-x-5 gap-y-2 md:gap-y-4  ">
+            <ul className="md:ml-5 list-disc   grid sm:grid-cols-2 gap-5 ">
               {product?.Applications?.applications?.map((usage, index) => {
                 return (
-                  <li className="flex items-center" key={index}>
+                  <li className="flex items-center  bg-[#e8f0fdab] p-2 rounded-md  gap-3" key={index}>
                     <svg
-                      className="h-6 w-6 flex-none fill-sky-100 stroke-primary stroke-2"
+                      className="h-6  w-6 flex-none fill-sky-100 stroke-primary stroke-2 "
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
@@ -24,9 +22,7 @@ const Applications = ({ data: { attributes: product, id } }) => {
                         fill="none"
                       />
                     </svg>
-                    <p className="ml-3 md:ml-4 text-gray-700 font-medium text-lg ">
-                      {usage}
-                    </p>
+                    <p className=" text-secondary  text-lg ">{usage}</p>
                   </li>
                 );
               })}

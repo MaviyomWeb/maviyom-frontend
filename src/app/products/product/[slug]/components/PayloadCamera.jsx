@@ -15,7 +15,7 @@ const PayloadCamera = ({ product }) => {
 
       <div className="mt-4 flex items-center justify-center">
         <Link
-          href="/contact"
+          href="/contact-us"
           className="px-6 py-2   font-medium text-text-primary rounded-3xl flex items-center justify-center transition-all duration-150 ease-in-out hover:text-white hover:bg-primary"
         >
           Know More

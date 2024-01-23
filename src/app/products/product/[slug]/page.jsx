@@ -21,7 +21,7 @@ const Product = async ({ params }) => {
   const product = res?.data[0];
 
   return (
-    <div className="relative isolate z-0pb-10 md:pb-20  mt-10 ">
+    <div className="relative isolate z-0 pb-10 md:pb-20  mt-10 ">
       <>
         <Container>
           <ProductDetails data={product} />

@@ -166,7 +166,7 @@ export const FOOTER_LINKS = [
     title: "Quick Links",
     links: [
       { label: "About Maviyom", href: "/about" },
-      { label: "Contact Us", href: "/contact" },
+      { label: "Contact Us", href: "/contact-us" },
     ],
   },
 ];

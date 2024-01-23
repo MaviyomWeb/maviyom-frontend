@@ -61,7 +61,7 @@ const AboutHero = () => {
         </ul>
         <div className="mt-6">
           <Link
-            href="/contact"
+            href="/contact-us"
             className="inline-flex items-center justify-center   text-white bg-[#0D0C22]  px-6 py-3  964Screen:px-[1.875rem] 964Screen:py-4 rounded-[30px] hover:opacity-90 active:opacity-90"
           >
             <span className="whitespace-nowrap tracking-widest capitalize text-sm font-semibold">

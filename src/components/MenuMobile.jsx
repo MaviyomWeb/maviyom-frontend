@@ -38,9 +38,9 @@ const MenuMobile = ({
   return (
     <div className="">
       <div
-        className={`flex flex-col gap-4 964Screen:hidden  font-medium fixed top-0   right-[-390px]   w-full h-screen max-w-[390px] bg-white border-t  px-4 xs:px-8 pt-1 pb-20 overflow-y-auto  z-50 transition-all duration-[400ms] transition-cubic-out  ${
+        className={`flex flex-col gap-4 964Screen:hidden  font-medium fixed top-0   right-[-360px]   w-full h-screen max-w-[360px] bg-white   px-4  pb-20 overflow-y-auto  z-50 transition-all duration-[400ms] transition-cubic-out  ${
           mobileMenu
-            ? "visible duration-500 translate-x-[-390px]"
+            ? "visible duration-500 translate-x-[-360px]"
             : " invisible "
         }`}
       >
@@ -55,7 +55,7 @@ const MenuMobile = ({
 
           <div className=" rounded-full flex 964Screen:hidden justify-center items-center hover:bg-black/[0.05] cursor-pointer relative -mr-2">
             <VscChromeClose
-              className="text-3xl"
+              className="text-[28px]"
               onClick={() => setMobileMenu(false)}
             />
           </div>
@@ -70,11 +70,11 @@ const MenuMobile = ({
               <Fragment key={item?.id}>
                 {item?.subMenu ? (
                   <li
-                    className="relative  border-b flex flex-col"
+                    className="relative  flex flex-col"
                     onClick={() => setShowCatMenu((prev) => !prev)}
                   >
                     <div
-                      className={`cursor-pointer  flex text-xl  items-center justify-between ${
+                      className={`cursor-pointer  flex text-lg  items-center justify-between ${
                         showCatMenu ? "text-primary" : "text-secondary"
                       } `}
                     >
@@ -97,7 +97,7 @@ const MenuMobile = ({
                               <div className="dropdown-inner">
                                 <div className="dropdown-item">
                                   <h3
-                                    className="relative item-heading mt-2 mb-3  text-lg    text-secondary font-semibold *:
+                                    className="relative item-heading mt-2 mb-3  text-base   text-secondary font-semibold *:
                             after:content-[''] after:absolute after:top-full after:left-0 after:h-[3px] after:w-8 after:bg-primary
                             "
                                   >
@@ -170,7 +170,7 @@ const MenuMobile = ({
                     <Link
                       href={item?.href}
                       onClick={hideShowMenu}
-                      className=" transition-colors ease-in-out duration-150 text-xl hover:text-primary "
+                      className=" transition-colors ease-in-out duration-150 text-lg hover:text-primary "
                     >
                       {item.label}
                     </Link>

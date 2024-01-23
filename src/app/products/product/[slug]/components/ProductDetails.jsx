@@ -9,7 +9,9 @@ const ProductDetails = ({ data: { attributes: product, id } }) => {
       <div className={`  max-w-[824px] mx-auto `}>
         <Image
           className={`w-full h-full  bg-gray-50 object-cover   ${
-            product?.title === "Maviyom 25L" ? "w-[300px] sm:w-[600px] h-[240px] mx-auto" : ""
+            product?.title === "Maviyom 25L"
+              ? "w-[300px] sm:w-[600px] h-[240px] mx-auto"
+              : ""
           }`}
           src={product?.product_image?.data?.attributes?.url}
           alt={product?.title}
@@ -17,7 +19,7 @@ const ProductDetails = ({ data: { attributes: product, id } }) => {
           height={340}
         />
       </div>
-      <div className="content md:w-4/6 md:mx-auto">
+      <div className="content md:w-4/5 lg:w-4/6 md:mx-auto">
         <div className="drone-info">
           <h2 className="heading text-3xl md:text-4xl xl:text-5xl text-secondary  font-dmSans  md:leading-5  text-center font-semibold  mt-7   mb-4">
             {product?.title}
@@ -42,7 +44,7 @@ const ProductDetails = ({ data: { attributes: product, id } }) => {
 
           <div className="flex items-center justify-center">
             <Link
-              href="/contact"
+              href="/contact-us"
               className=" inline-flex items-center whitespace-nowrap text-white bg-primary hover:opacity-80  font-medium px-6 py-[10px] rounded-lg"
             >
               Enquire Now

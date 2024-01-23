@@ -69,7 +69,7 @@ const DroneFeaturesTest = ({ section, index }) => {
 
       <div className="flex items-center justify-center mt-10">
         <Link
-          href="/contact"
+          href="/contact-us"
           className=" inline-flex whitespace-nowrap text-white bg-primary  font-medium px-6 py-[10px] rounded-lg"
         >
           Enquire Now
