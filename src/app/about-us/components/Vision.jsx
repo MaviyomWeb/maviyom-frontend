@@ -3,10 +3,9 @@ import React from "react";
 const Vision = () => {
   return (
     <>
-      <div className="mt-4 md:mt-10 grid justify-between  lg:grid-cols-2 lg:gap-10 py-10 md:py-20 ">
+      <div className="mt-5 md:mt-20 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:items-stretch lg:gap-10 py-10 md:pb-20  ">
         <div
-          className={`content grid gap-5  pb-10  
-          space-y-3  p-2 md:p-4 lg:border-l-2  lg:border-b-2 lg:border-l-sky-800  lg:border-b-sky-800
+          className={` grid place-content-center rounded bg-gray-100 p-6 sm:p-8
     
     `}
         >
@@ -19,7 +18,7 @@ after:w-[40px] after:rounded-3xl after:bg-primary after:content-['']
             Our Vision
           </h2>
           <p
-            className={`  font-poppins  leading-7 text-[#1b243f]  text-lg xs:text-base
+            className={`mt-5  text-lg md:text-[17px]  leading-7 text-[#1b243f]
             `}
           >
             Maviyom Aviation is on a journey to become a respected name in drone
@@ -34,11 +33,11 @@ after:w-[40px] after:rounded-3xl after:bg-primary after:content-['']
           </p>
         </div>
 
-        <div className="img-container h-[280px] md:h-[400px] w-full  overflow-hidden rounded-md">
+        <div className="img-container h-full sm:h-[400px] lg:h-full   overflow-hidden rounded-md">
           <img
             src="/businessman-big-office.jpg"
             alt="deigns"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-right object-cover"
           />
         </div>
       </div>

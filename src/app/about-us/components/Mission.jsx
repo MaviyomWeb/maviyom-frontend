@@ -108,7 +108,7 @@ after:w-[40px] after:rounded-3xl after:bg-primary after:content-[''] "
           >
             Our <em>Mission</em>
           </h2>
-          <p className="text-text-secondary text-lg md:text-sm my-7">
+          <p className="text-gray-600 text-lg md:text-base my-7">
             We are dedicated to elevating the potential of industries and
             individuals with cutting-edge drone (UAV) technology. Our pursuit is
             to not just innovate, but to redefine possibilities. .

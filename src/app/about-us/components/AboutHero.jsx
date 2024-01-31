@@ -34,7 +34,7 @@ const AboutHero = () => {
 
         <ul className=" flex flex-col gap-3 ">
           <li className="flex    gap-3 ">
-            <span className="border-t-2">
+            <span className="border-t-2 border-transparent">
               <HiCheckBadge size={24} className=" fill-primary " />
             </span>
             <span className="font-medium text-[#0f110f] text-lg 964Screen:text-base  font-poppins ">
@@ -43,7 +43,7 @@ const AboutHero = () => {
           </li>
 
           <li className="flex    gap-3 ">
-            <span className="border-t-2">
+            <span className="border-t-2 border-transparent">
               <HiCheckBadge size={24} className="fill-primary " />
             </span>
             <span className="font-medium text-[#0f110f] text-lg 964Screen:text-base  font-poppins ">
@@ -51,7 +51,7 @@ const AboutHero = () => {
             </span>
           </li>
           <li className="flex   gap-3 ">
-            <span className="border-t-2">
+            <span className="border-t-2 border-transparent">
               <HiCheckBadge size={24} className="fill-primary  " />
             </span>
             <span className="font-medium text-[#0f110f] text-lg 964Screen:text-base  font-poppins ">
