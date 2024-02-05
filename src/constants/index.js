@@ -159,13 +159,13 @@ export const FOOTER_LINKS = [
     title: "Products",
     links: [
       { label: "UAVs", href: "/products" },
-      { label: "Ground Control Stations", href: "/gcs" },
+      { label: "Ground Control Stations", href: "/ground-control-station" },
     ],
   },
   {
     title: "Quick Links",
     links: [
-      { label: "About Maviyom", href: "/about" },
+      { label: "About Maviyom", href: "/about-us" },
       { label: "Contact Us", href: "/contact-us" },
     ],
   },
