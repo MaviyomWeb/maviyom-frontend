@@ -1,9 +1,11 @@
+const { v4: uuidv4 } = require("uuid");
+
 export const NAV_LINKS = [
-  { id: crypto.randomUUID(), label: "Home", href: "/" },
-  { id: crypto.randomUUID(), label: "About", href: "/about-us" },
-  { id: crypto.randomUUID(), label: "Products", subMenu: true },
-  { id: crypto.randomUUID(), label: "GCS", href: "/ground-control-station" },
-  { id: crypto.randomUUID(), label: "Contact", href: "/contact-us" },
+  { id: uuidv4(), label: "Home", href: "/" },
+  { id: uuidv4(), label: "About", href: "/about-us" },
+  { id: uuidv4(), label: "Products", subMenu: true },
+  { id: uuidv4(), label: "GCS", href: "/ground-control-station" },
+  { id: uuidv4(), label: "Contact", href: "/contact-us" },
 ];
 
 export const SUB_NAV_LINKS = [
@@ -11,7 +13,7 @@ export const SUB_NAV_LINKS = [
     category: "Rotary Wings",
     productLinks: [
       {
-        id: crypto.randomUUID(),
+        id: uuidv4(),
         href: "/products/product/maviyom-x4",
         label: "Maviyom X4",
         description:
@@ -20,7 +22,7 @@ export const SUB_NAV_LINKS = [
       },
 
       {
-        id: crypto.randomUUID(),
+        id: uuidv4(),
         href: "/products/product/maviyom-t-100-tethered-drone",
         label: "T-100 Tethered Drone",
         description:
@@ -28,7 +30,7 @@ export const SUB_NAV_LINKS = [
         image: "/T100.jpg",
       },
       {
-        id: crypto.randomUUID(),
+        id: uuidv4(),
         href: "/products/product/maviyom-x8",
         label: "Maviyom X8",
         description:
@@ -37,7 +39,7 @@ export const SUB_NAV_LINKS = [
       },
 
       {
-        id: crypto.randomUUID(),
+        id: uuidv4(),
         href: "/products/product/maviyom-25-l",
         label: "Maviyom 25L",
         description:
@@ -50,7 +52,7 @@ export const SUB_NAV_LINKS = [
     category: "Fixed Wings",
     productLinks: [
       {
-        id: crypto.randomUUID(),
+        id: uuidv4(),
         href: "/products/product/maviyom-vtol-2500-e-1",
         label: "Maviyom VTOL 2500-E",
         description:
@@ -58,7 +60,7 @@ export const SUB_NAV_LINKS = [
         image: "/VTOL-2500E.jpg",
       },
       {
-        id: crypto.randomUUID(),
+        id: uuidv4(),
         href: "/products/product/maviyom-vtol-3800-h",
         label: "Maviyom VTOL V3800-H",
         description:
@@ -66,7 +68,7 @@ export const SUB_NAV_LINKS = [
         image: "/VTOL-3800H.jpg",
       },
       {
-        id: crypto.randomUUID(),
+        id: uuidv4(),
         href: "/products/product/maviyom-vtol-3900-h",
         label: "Maviyom VTOL 3900-H",
         description:
@@ -79,7 +81,7 @@ export const SUB_NAV_LINKS = [
 
 export const Hero_Specs = [
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     title: "Precision Targeting",
     desc: "50mm lens",
     info: "Capture your world with unparalleled clarity using our advanced imaging technology",
@@ -87,7 +89,7 @@ export const Hero_Specs = [
     bgColor: "#ffaa001c",
   },
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     title: "Rapid Deployment",
     desc: "130 km/hr",
     info: "Experience the thrill of speed with drones designed for swift mobilization and response.",
@@ -95,7 +97,7 @@ export const Hero_Specs = [
     bgColor: "#f9485124",
   },
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     title: "Enduring Performance",
     desc: "3-4 hours",
     info: "Benefit from extended flight times with our energy-efficient designs for long-lasting missions.",
@@ -133,21 +135,21 @@ export const whyMaviyomDetails = [
 
 export const industries = [
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     title: "Agriculture",
     subtitle: "Precision farming with drones.",
     imgSrc:
       "https://maviyom.com/wp-content/uploads/2023/07/agriculture-1024x468.png",
   },
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     title: "Security",
     subtitle: "Advanced surveillance systems. ",
     imgSrc:
       "https://maviyom.com/wp-content/uploads/2023/07/Surveillance-Security.png",
   },
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     title: "Logistics",
     subtitle: "Efficient delivery services.",
     imgSrc: "https://maviyom.com/wp-content/uploads/2023/07/Logistics-1.png",
@@ -173,7 +175,7 @@ export const FOOTER_LINKS = [
 
 export const AboutUsData = [
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     service: "#service 1",
     title: `Where technology takes wings`,
     subtitle: `Maviyom Aviation Pvt. Ltd. is an innovative startup dedicated to pioneering cutting-edge drone manufacturing in India.By harnessing the rapid progression in Artificial Intelligence (AI) and unmanned aerial vehicle (UAV) technology, we offer a novel approach to enhance operational efficiency, increase profitability, and create new business models. Integrating AI into our drones opens up limitless possibilities, enabling us to address complex challenges, facilitate better decision-making, and provide unique opportunities for growth and expansion across various sectors.
@@ -181,7 +183,7 @@ export const AboutUsData = [
     imgSrc: "/maviyom-25l-img.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     service: "#service 2",
     title: `Our Mission`,
     subtitle: `Mission: Empower industries and individuals with groundbreaking UAV technology. Provide state-of-the-art solutions for effectiveness, sustainability, and security. Through accuracy and accessibility, forge pioneering UAVs for evolving industry needs.
@@ -190,14 +192,14 @@ Collaborate with allies and educational initiatives to spark creativity, educate
     imgSrc: "/maviyom-25l-img.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     service: "#service 3",
     title: `Branding`,
     subtitle: `We design consumer experience in a way that attracts loyalty to your brand. We understand and encompass who you are, take your unique offerings to the right people and clearly answers why consumers must choose you over the rest.`,
     imgSrc: "/maviyom-25l-img.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     service: "#service 4",
     title: `Social Marketing`,
     subtitle: `We have knowledge, tools and experiences since we have catered to many digital solutions and revolutions over the past decade. Digital and social makeovers certainly cannot be at the end of the tunnel of your growth strategy.`,
@@ -396,21 +398,21 @@ export const privacyInfo = {
 
 export const allIndustries = [
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     title: "Agriculture",
     detail:
       "Welcome to Maviyom, your trusted partner in the realm of agricultural drone technology. Our innovative lineup of drones is specifically designed to elevate farming practices, boost productivity, and promote sustainable agriculture. With a focus on efficiency, reliability, and advanced features, our drones are tailored to meet the diverse needs of modern farmers. Explore our range of drones and discover how they can revolutionize your agricultural operations",
     imageSrc: "/agriculture-industry.png",
   },
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     title: "Surveillance & Security",
     detail:
       "Maviyom offers a diverse range of surveillance drones designed to meet the demanding needs of the security and surveillance industry. Our drones are equipped with advanced features and cutting-edge technology to ensure accurate and efficient surveillance operations. Let’s explore the specifications and applications of each drone.",
     imageSrc: "/surveillance-security-industry.png",
   },
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     title: "Logistics",
     detail:
       "Introducing the Multi-rotor MX8, the ultimate logistics drone by Maviyom. Engineered with cutting-edge technology and designed for optimal performance, the MX8 is set to revolutionize the logistics industry. With its unrivaled capabilities and advanced features, the MX8 is poised to redefine the way goods are transported and delivered.",
@@ -418,21 +420,21 @@ export const allIndustries = [
   },
 
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     title: "Road Development, Management & Safety",
     detail:
       "Welcome to Maviyom, the leading provider of advanced drone solutions for road development, networking, management, and traffic control. Our range of specialized drones is designed to revolutionize the way highways and expressways are planned, monitored, and managed. Let’s explore our drones and their applications in the field",
     imageSrc: "/Road-Development-Management-Safety-1-industry.png",
   },
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     title: "Disaster & Forest Assessment And Management",
     detail:
       "When disaster strikes, every second counts. At Maviyom, we understand the critical role that drones play in disaster assessment, control, and post-management. Our range of advanced drones is specifically designed to provide real-time data, situational awareness, and support in critical situations, enabling effective response and recovery operations.",
     imageSrc: "/Disaster-Forest-Assessment-And-Management-industry.png",
   },
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     title: "Crowd Management & Traffic Control",
     detail:
       "At Maviyom, we recognize the critical role of drones in crowd control and management across various situations and circumstances. Our Multi-rotor MX6 drone, customized with advanced features such as sound and voice, and signal emitting equipment and devices, is specifically designed to address crowd control challenges effectively. Let’s explore the diverse applications of this drone in different scenarios",
@@ -442,7 +444,7 @@ export const allIndustries = [
 
 export const IndustriesData = [
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     imageBanner: "/agriculture-industry.png",
     title: "Agriculture",
     intro:
@@ -612,7 +614,7 @@ export const camerasData = [
 export const teamMembers = [
   {
     name: "Manmohan Aggarwal",
-    role: "Chairman of the Board",
+    role: "CHAIRMAN OF THE BOARD",
     description:
       "With over 27 years of experience across global markets, Mr. Manmohan Aggarwal, our Chairman, is known for his market intuition and exceptional ability to transform trends into business victories. His leadership is a cornerstone, setting our course towards remarkable achievements.",
   },
@@ -624,13 +626,13 @@ export const teamMembers = [
   },
   {
     name: "Brijesh Sharma",
-    role: "COO",
+    role: "Co-founder & COO",
     description:
       "Brijesh Sharma, our COO, is a virtuoso of technology whose masterful understanding of aerospace engineering and production propels our operational excellence. His strategic and technological expertise ensures Maviyom's operations remain efficient and on the cutting edge",
   },
   {
     name: "Akshay Verma",
-    role: "CTO",
+    role: "Co-founder & CTO",
     description:
       "Akshay Verma, our CTO, is at the helm of our technological strategy, integrating AI and software development with an ethical approach that guides Maviyom's responsible yet pioneering advancements in UAV technology.",
   },
@@ -638,26 +640,26 @@ export const teamMembers = [
 
 export const droneLists = [
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
 
     label: "Multi-Rotor Maviyom X4",
     image: "/x4.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
 
     label: "Multi-Rotor Maviyom X8",
     image: "/x8.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
 
     label: "Maviyom 25L",
     image: "/X4.jpg",
   },
 
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
 
     label: "T-100 Tethered Drone",
     image: "/T100.jpg",
@@ -665,7 +667,7 @@ export const droneLists = [
 
   // vtol
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
 
     label: "Maviyom VTOL 2500-E",
     image: "/VTOL-2500E.jpg",
@@ -673,7 +675,7 @@ export const droneLists = [
 
   // vtol
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
 
     label: "Maviyom VTOL V3800-H",
     image: "/VTOL-3800H.jpg",
@@ -681,7 +683,7 @@ export const droneLists = [
 
   // vtol
   {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
 
     label: "Maviyom VTOL V3900-H",
     image: "/VTOL-3900H.jpg",

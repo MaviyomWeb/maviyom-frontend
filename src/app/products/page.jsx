@@ -35,7 +35,7 @@ const Products = async () => {
           </div>
         </div>
         <div className="bg-gray">
-          <div className="grid md:grid-cols-2 gap-y-5 xs:gap-y-10 md:gap-y-8 gap-x-16  max-w-5xl mx-auto ">
+          <div className="grid md:grid-cols-2 gap-y-5 xs:gap-y-10 md:gap-y-8 gap-x-16  xl:max-w-5xl 2xl:max-w-6xl mx-auto ">
             {products?.data?.map((product) => {
               return <ProductCard3 key={product?.id} data={product} />;
             })}

@@ -8,7 +8,6 @@ export default async function sitemap() {
     lastModified: new Date(product?.attributes?.updatedAt),
   }));
 
-
   return [
     {
       url: `https://www.maviyom.com`,

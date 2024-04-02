@@ -24,7 +24,7 @@ const ContactAddress = () => {
               </div>
 
               <div className="">
-                <div className="h-12 lg:h-14 w-12 lg:w-14 flex items-center justify-center text-white bg-secondary rounded-full">
+                <div className="h-10 md:h-12 lg:h-14 w-10 md:w-12 lg:w-14 flex items-center justify-center text-white bg-secondary rounded-full">
                   <IoCallOutline className="text-2xl md:text-[27px] lg:text-3xl" />
                 </div>
                 <h3 className="w-full text-2xl md:text-3xl   font-bold text-secondary  mt-2  md:mt-4 mb-1 md:mb-2  ">

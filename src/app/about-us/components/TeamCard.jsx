@@ -8,7 +8,7 @@ const TeamCard = ({ member }) => {
         className="inline-block h-36 w-36 rounded-full"
       /> */}
       <div className="mt-4 flex flex-col ">
-        <h4 className="text-secondary font-poppins mb-[10px] text-center font-medium uppercase">
+        <h4 className="text-secondary font-poppins mb-[10px] text-center font-medium ">
           {member.role}
         </h4>
         <h3 className="text-secondary font-poppins text-center text-lg font-semibold">

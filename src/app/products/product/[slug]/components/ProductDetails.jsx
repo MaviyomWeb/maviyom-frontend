@@ -19,7 +19,7 @@ const ProductDetails = ({ data: { attributes: product, id } }) => {
           height={340}
         />
       </div>
-      <div className="content md:w-4/5 lg:w-4/6 md:mx-auto">
+      <div className="content md:w-4/5 lg:w-4/6 2xl:w-4/5 md:mx-auto">
         <div className="drone-info">
           <h2 className="heading text-3xl md:text-4xl xl:text-5xl text-secondary  font-dmSans  md:leading-5  text-center font-semibold  mt-7   mb-4">
             {product?.title}

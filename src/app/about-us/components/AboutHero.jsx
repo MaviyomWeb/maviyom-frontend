@@ -23,7 +23,7 @@ const AboutHero = () => {
           Maviyom Aviation: Elevating Innovation
         </h2>
         <p
-          className={` text-gray-800 pb-5 text-[19px] xs:text-lg 964Screen:text-base
+          className={` text-gray-800 pb-5 text-lg xs:text-lg md:text-base
             `}
         >
           At Maviyom Aviation, we are committed to transcending the ordinary.
