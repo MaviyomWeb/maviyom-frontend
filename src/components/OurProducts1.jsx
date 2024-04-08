@@ -6,14 +6,19 @@ import ProductsCarousel from "./ProductsCarousel";
 import { fetchDataFromApi } from "../../utils/api";
 
 const fetchProducts = async () => {
-  // noStore();
-  const products = await fetchDataFromApi("/api/products?populate=*");
+  try {
+    // noStore();
+    const products = await fetchDataFromApi("/api/products?populate=*");
 
-  if (!products) {
-    throw new Error("Products Not Found");
+    if (!products) {
+      throw new Error("Products Not Found");
+    }
+
+    return products;
+  } catch (error) {
+    // Handle the error here or re-throw it to be handled by the component using this function
+    throw new Error("Error fetching products: " + error.message);
   }
-
-  return products;
 };
 
 const OurProducts1 = async () => {

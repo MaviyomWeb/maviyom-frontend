@@ -5,15 +5,21 @@ import Payload from "./components/Payload";
 import ProductDetails from "./components/ProductDetails";
 
 const fetchProductsDetails = async (slug) => {
-  const product = await fetchDataFromApi(
-    `/api/products?populate=*&filters[slug][$eq]=${slug}`
-  );
+  try {
+    // noStore();
+    const product = await fetchDataFromApi(
+      `/api/products?populate=*&filters[slug][$eq]=${slug}`
+    );
 
-  if (!product) {
-    throw new Error("Product not found ");
+    if (!product) {
+      throw new Error("Products Not Found");
+    }
+
+    return product;
+  } catch (error) {
+    // Handle the error here or re-throw it to be handled by the component using this function
+    throw new Error("Error fetching products: " + error.message);
   }
-
-  return product;
 };
 
 const Product = async ({ params }) => {
