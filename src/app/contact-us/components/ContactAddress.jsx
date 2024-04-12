@@ -35,7 +35,7 @@ const ContactAddress = () => {
                 </p>
               </div>
             </div>
-            <div className="space-y-4 divide-y-2">
+            <div className="space-y-4 ">
               <div className="space-y-4">
                 <div className="h-10 md:h-12 lg:h-14 w-10 md:w-12 lg:w-14 flex items-center justify-center text-white bg-secondary rounded-full">
                   <IoLocationOutline className="text-2xl md:text-[27px] lg:text-3xl" />
@@ -47,13 +47,13 @@ const ContactAddress = () => {
               {locations.map((location, index) => (
                 <div
                   key={index}
-                  className="flex flex-col space-y-2 first:pt-0 lg:w-full"
+                  className="flex flex-col space-y-1 first:pt-0 lg:w-full"
                 >
                   <p className="w-full text-xl font-semibold  text-secondary">
                     {location.title}
                   </p>
 
-                  <p className=" font-medium text-lg text-gray-600">
+                  <p className="font-medium  text-lg text-gray-600">
                     {location.address}
                   </p>
                 </div>

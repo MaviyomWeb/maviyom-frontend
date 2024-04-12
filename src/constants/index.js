@@ -568,6 +568,10 @@ export const locations = [
     title: "Manufacturing Facility",
     address: "Haridwar, Uttarakhand ",
   },
+  {
+    title: "Overseas office",
+    address: "6565 Av Julius nyerere, Maputo, Mozambique ",
+  },
 ];
 
 export const camerasData = [
