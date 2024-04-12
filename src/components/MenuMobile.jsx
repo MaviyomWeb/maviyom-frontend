@@ -138,7 +138,7 @@ const MenuMobile = ({
                                               width={200}
                                               height={80}
                                               placeholder="blur"
-                                              blurDataURL="/1x1-ffffffff.png"
+                                              blurDataURL="/1x1-ffffffff.webp"
                                               style={{
                                                 width: "100%",
                                                 height: "auto",

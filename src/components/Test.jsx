@@ -87,7 +87,7 @@ const Test = () => {
 
               <div className="flex flex-grow relative pl-10  ">
                 <img
-                  src="/agri-25L.png"
+                  src="/agri-25L.webp"
                   alt="about"
                   className="h-80 md:h-full w-full rounded-md   object-cover  "
                 />

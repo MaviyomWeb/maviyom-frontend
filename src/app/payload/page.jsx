@@ -9,7 +9,7 @@ const page = () => {
         <div className="relative h-64 md:h-[350px]">
           <div className="absolute left-0 top-0 h-full w-full overflow-hidden">
             <img
-              src="/payload-hero-banner.png"
+              src="/payload-hero-banner.webp"
               alt="Payload"
               className="h-full w-full object-cover object-top"
             />
@@ -40,7 +40,7 @@ const page = () => {
                     <a href="#">
                       <img
                         className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                        src="/cam-1.png"
+                        src="/cam-1.webp"
                         alt="Bonnie Avatar"
                       />
                     </a>

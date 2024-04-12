@@ -35,7 +35,7 @@ after:w-[40px] after:rounded-3xl after:bg-primary after:content-['']
 
         <div className="img-container h-full sm:h-[400px] lg:h-full   overflow-hidden rounded-md">
           <img
-            src="/businessman-big-office.jpg"
+            src="/businessman-big-office.webp"
             alt="deigns"
             className="h-full w-full object-right object-cover"
           />

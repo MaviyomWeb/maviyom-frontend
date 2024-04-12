@@ -18,7 +18,7 @@ export const SUB_NAV_LINKS = [
         label: "Maviyom X4",
         description:
           "Agile and discreet, the X4 is your solution for high-definition surveillance and rapid deployment.",
-        image: "/X4.jpg",
+        image: "/X4.webp",
       },
 
       {
@@ -27,7 +27,7 @@ export const SUB_NAV_LINKS = [
         label: "T-100 Tethered Drone",
         description:
           "Reliable and steady aerial oversight, providing continuous surveillance with an unwavering eye.",
-        image: "/T100.jpg",
+        image: "/T100.webp",
       },
       {
         id: uuidv4(),
@@ -35,7 +35,7 @@ export const SUB_NAV_LINKS = [
         label: "Maviyom X8",
         description:
           "Revolutionizing cargo delivery, the X8 brings speed and efficiency to critical logistics.",
-        image: "/X8.png",
+        image: "/X8.webp",
       },
 
       {
@@ -44,7 +44,7 @@ export const SUB_NAV_LINKS = [
         label: "Maviyom 25L",
         description:
           "Precision agriculture from above, optimizing crop health and yield with advanced spraying technology.",
-        image: "/25L.png",
+        image: "/25L.webp",
       },
     ],
   },
@@ -57,7 +57,7 @@ export const SUB_NAV_LINKS = [
         label: "Maviyom VTOL 2500-E",
         description:
           "Mapping and monitoring redefined,delivering expansive coverage and detailed imagery with exceptional flight endurance.",
-        image: "/VTOL-2500E.jpg",
+        image: "/VTOL-2500E.webp",
       },
       {
         id: uuidv4(),
@@ -65,7 +65,7 @@ export const SUB_NAV_LINKS = [
         label: "Maviyom VTOL V3800-H",
         description:
           "A hybrid UAV offering extensive range and payload capacity for in-depth aerial reconnaissance.",
-        image: "/VTOL-3800H.jpg",
+        image: "/VTOL-3800H.webp",
       },
       {
         id: uuidv4(),
@@ -73,7 +73,7 @@ export const SUB_NAV_LINKS = [
         label: "Maviyom VTOL 3900-H",
         description:
           "Pioneering long-duration flights for comprehensive mapping and critical data collection.",
-        image: "/VTOL-3900H.jpg",
+        image: "/VTOL-3900H.webp",
       },
     ],
   },
@@ -251,7 +251,7 @@ export const GCS_Details = [
         value: "Dual Senor: 30x Zoom & Thermal 640×512 pixel & LRF",
       },
     ],
-    images: ["/GCS_1_1.png"], // Add image URLs or file names here
+    images: ["/GCS_1_1.webp"], // Add image URLs or file names here
   },
   {
     GCS_Number: "2",
@@ -269,7 +269,7 @@ export const GCS_Details = [
         value: "26 Physical, 16 Sky Station Output Channels",
       },
     ],
-    images: ["/GCS_2.jpg"], // Add image URLs or file names here
+    images: ["/GCS_2.webp"], // Add image URLs or file names here
   },
   {
     GCS_Number: "3",
@@ -285,7 +285,7 @@ export const GCS_Details = [
       { label: "Channels", value: "16 Channels" },
       { label: "Operating System", value: "Android" },
     ],
-    images: ["/GCS_3.png"], // Add image URLs or file names here
+    images: ["/GCS_3.webp"], // Add image URLs or file names here
   },
   {
     GCS_Number: "4",
@@ -311,7 +311,7 @@ export const GCS_Details = [
         value: "WIFI / Bluetooth(standard) 4G(optional)",
       },
     ],
-    images: ["/GCS_4.png"], // Add image URLs or file names here
+    images: ["/GCS_4.webp"], // Add image URLs or file names here
   },
   // Repeat similar structures for other GCS items
 ];

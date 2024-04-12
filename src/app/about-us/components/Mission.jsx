@@ -114,7 +114,7 @@ after:w-[40px] after:rounded-3xl after:bg-primary after:content-[''] "
             to not just innovate, but to redefine possibilities. .
           </p>
           <img
-            src="/mission-img.jpg"
+            src="/mission-img.webp"
             alt=""
             className="w-full h-64 sm:h-96   xl:h-full object-cover "
           />

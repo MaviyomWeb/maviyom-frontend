@@ -11,7 +11,7 @@ const ProductCard3 = ({ data: { attributes: product, id } }) => {
           width={400}
           height={200}
           placeholder="blur"
-          blurDataURL="/1x1-ffffffff.png"
+          blurDataURL="/1x1-ffffffff.webp"
           className="h-full w-full object-cover "
         />
       </div>

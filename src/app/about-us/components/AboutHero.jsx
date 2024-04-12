@@ -78,7 +78,7 @@ const AboutHero = () => {
       <div className="hidden 964Screen:block 964Screen:w-1/2">
         <div className="img-container  w-full h-[300px]  964Screen:h-[400px] xl:h-[444px] max-w-[728px] border-4 border-white overflow-hidden rounded-2xl">
           <img
-            src="/about-hero-img.png"
+            src="/about-hero-img.webp"
             alt="deigns"
             className="h-full w-full object-cover object-center"
           />

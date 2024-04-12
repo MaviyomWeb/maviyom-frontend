@@ -32,7 +32,7 @@ const GCSItem = ({ GCS_Detail }) => {
       {GCS_Detail.GCS_Number === "1" && (
         <figure className="hidden sm:block my-5 md:mt-16 md:mb-0 h-full w-full  max-w-[900px] mx-auto">
           <img
-            src="/GCS_safe_return.png"
+            src="/GCS_safe_return.webp"
             alt="GCS Specs"
             className="h-full w-full object-cover"
           />

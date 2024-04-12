@@ -15,7 +15,7 @@ const About = () => {
           <div className="pb-10 md:pb-20">
             <div className=" w-full sm:max-w-lg md:max-w-2xl lg:max-w-4xl  xL:max-w-5xl mx-auto">
               <img
-                src="/maviyom-new-home.jpg"
+                src="/maviyom-new-home.webp"
                 alt="about"
                 className="h-full w-full object-cover rounded-lg"
               />
