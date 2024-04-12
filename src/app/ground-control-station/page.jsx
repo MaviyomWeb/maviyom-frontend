@@ -12,7 +12,7 @@ const GCS = () => {
         <div className="relative h-64 md:h-[350px]">
           <div className="absolute left-0 top-0 h-full w-full overflow-hidden">
             <Image
-              src="/mission-img.jpg"
+              src="/mission-img.webp"
               alt="GCS"
               width="500"
               height="350"
