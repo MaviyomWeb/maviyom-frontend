@@ -570,7 +570,7 @@ export const locations = [
   },
   {
     title: "Overseas office",
-    address: "6565 Av Julius nyerere, Maputo, Mozambique ",
+    address: "Maputo, Mozambique ",
   },
 ];
 
