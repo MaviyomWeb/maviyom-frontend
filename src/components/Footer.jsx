@@ -20,14 +20,13 @@ const FOOTER_CONTACT_INFO = {
   links: [
     {
       label: "Office Contact",
-      value: "(+91) 981 069 9680",
+      value: "(+91) 011-4563-5630",
       icon: <AiFillPhone />,
     },
     { label: "Email Address", value: "info@maviyom.com", icon: <AiFillMail /> },
     {
       label: "Visit Office ",
-      value:
-        "New Delhi – 110001 India.",
+      value: "New Delhi – 110001 India.",
       icon: <HiLocationMarker />,
     },
   ],
@@ -112,7 +111,7 @@ const Footer = () => {
             </div>
 
             <p className=" text-sm font-medium text-[#eee] ">
-              © 2023 Copyrights by Maviyom Aviation
+              © 2024 Copyrights by Maviyom Aviation
             </p>
           </div>
         </Container>

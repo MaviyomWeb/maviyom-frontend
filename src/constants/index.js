@@ -5,6 +5,7 @@ export const NAV_LINKS = [
   { id: uuidv4(), label: "About", href: "/about-us" },
   { id: uuidv4(), label: "Products", subMenu: true },
   { id: uuidv4(), label: "GCS", href: "/ground-control-station" },
+  { id: uuidv4(), label: "Blog", href: "/blog" },
   { id: uuidv4(), label: "Contact", href: "/contact-us" },
 ];
 
@@ -618,7 +619,7 @@ export const camerasData = [
 export const teamMembers = [
   {
     name: "Manmohan Aggarwal",
-    role: "CHAIRMAN OF THE BOARD",
+    role: "Chairman of the Board",
     description:
       "With over 27 years of experience across global markets, Mr. Manmohan Aggarwal, our Chairman, is known for his market intuition and exceptional ability to transform trends into business victories. His leadership is a cornerstone, setting our course towards remarkable achievements.",
   },
@@ -630,13 +631,13 @@ export const teamMembers = [
   },
   {
     name: "Brijesh Sharma",
-    role: "Co-founder & COO",
+    role: " COO",
     description:
       "Brijesh Sharma, our COO, is a virtuoso of technology whose masterful understanding of aerospace engineering and production propels our operational excellence. His strategic and technological expertise ensures Maviyom's operations remain efficient and on the cutting edge",
   },
   {
     name: "Akshay Verma",
-    role: "Co-founder & CTO",
+    role: " CTO",
     description:
       "Akshay Verma, our CTO, is at the helm of our technological strategy, integrating AI and software development with an ethical approach that guides Maviyom's responsible yet pioneering advancements in UAV technology.",
   },

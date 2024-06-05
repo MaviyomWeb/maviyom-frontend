@@ -20,6 +20,10 @@ module.exports = {
         "shadow-1": "0px 2px 8px #20074124",
         "shadow-2": "#0000001E 0px 1px 3px, #0000003D 0px 1px 2px",
         "shadow-3": "0px 7px 15px 0px #00000021, 0px 1px 4px 0px #0000001C",
+        "blog-card-shadow-1":
+          "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+        "blog-card-shadow-2":
+          "0px 19px 38px  #00000003 ,0px 15px 12px  #00000022 ",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

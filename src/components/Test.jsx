@@ -10,7 +10,7 @@ const Test = () => {
       <Container>
         <>
           <div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#152432] text-center font-semibold leading-[1.45]">
+            <h2 className="text-3xl sm:text-4xl md:text-[2.5rem] text-[#152432] text-center font-semibold leading-[1.45]">
               Why Choose Maviyom
             </h2>
             <p className=" text-[#5d6165] text-center text-base leading-5 mt-2 ">

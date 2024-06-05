@@ -31,7 +31,7 @@ const ContactAddress = () => {
                   Our Contact Details
                 </h3>
                 <p className="w-full text-lg  text-gray-600">
-                  (+91) 981 069 9680
+                  (+91) 011-4563-5630
                 </p>
               </div>
             </div>

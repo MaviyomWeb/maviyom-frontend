@@ -20,14 +20,14 @@ const GetInTouch = () => {
           <ul className="mt-4 flex justify-center lg:space-x-6 max-lg:flex-col max-lg:items-center max-lg:space-y-2 ">
             <li className="flex items-center hover:text-blue-500">
               <HiOutlineEnvelope className="text-xl " />
-              <span  className="text-current lg:text-sm text-secondary ml-3">
+              <span className="text-current lg:text-sm text-secondary ml-3">
                 <strong>info@maviyom.com</strong>
               </span>
             </li>
             <li className="flex items-center text-current hover:text-blue-500">
               <IoCallOutline className="text-xl " />
-              <span  className="text-current lg:text-sm text-secondary ml-3">
-                <strong>(+91) 981 069 9680</strong>
+              <span className="text-current lg:text-sm text-secondary ml-3">
+                <strong>(+91) 011-4563-5630</strong>
               </span>
             </li>
           </ul>
