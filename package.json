@@ -11,6 +11,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
     "axios": "^1.6.5",
+    "js-cookie": "^3.0.5",
     "next": "14.0.4",
     "perfect-scrollbar": "^1.5.5",
     "react": "^18",

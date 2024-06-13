@@ -1,3 +1,4 @@
+import Blogs from "@/components/Blogs";
 import HeroBanner from "@/components/HeroBanner";
 import OurProducts1 from "@/components/OurProducts1";
 import Specs from "@/components/Specs";
@@ -10,6 +11,7 @@ export default function Home() {
       <OurProducts1 />
       <Specs />
       <Test />
+      <Blogs />
     </>
   );
 }

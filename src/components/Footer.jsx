@@ -21,7 +21,7 @@ const FOOTER_CONTACT_INFO = {
     {
       label: "Office Contact",
       value: "(+91) 011-4563-5630",
-      icon: <AiFillPhone />,
+      icon: <AiFillPhone className="rotate-90" />,
     },
     { label: "Email Address", value: "info@maviyom.com", icon: <AiFillMail /> },
     {
@@ -75,7 +75,7 @@ const Footer = () => {
                       <div className="flex items-center gap-[2px]">
                         <span
                           className="transition-transition-1
-                  mr-3 rounded-full bg-primary p-2 text-xl text-white
+                  mr-3  rounded-full bg-primary p-2 text-xl text-white
                  "
                         >
                           {link.icon}

@@ -10,6 +10,8 @@ import Link from "next/link";
 
 import Image from "next/image";
 import Container from "./Container";
+import getPrefLangCookie from "./LangCookie";
+import GoogleTranslate from "./LanguageTranslator";
 import Menu from "./Menu";
 import MenuMobile from "./MenuMobile";
 import TouchButton from "./TouchButton";
@@ -62,12 +64,14 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center ">
-            <div className="nav_actions hidden 964Screen:block">
+            <div className="nav_actions hidden 964Screen:flex items-center gap-5 ">
               <TouchButton />
+              <GoogleTranslate />
             </div>
 
             {/* Mobile icon start */}
-            <div className=" rounded-full flex 964Screen:hidden justify-center items-center hover:bg-black/[0.05] cursor-pointer relative -mr-2">
+            <div className=" rounded-full flex gap-2 964Screen:hidden justify-center items-center hover:bg-black/[0.05] cursor-pointer relative -mr-2">
+              <GoogleTranslate />
               <BiMenuAltRight
                 className="text-3xl"
                 onClick={() => setMobileMenu(true)}

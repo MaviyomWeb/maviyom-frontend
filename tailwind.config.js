@@ -47,6 +47,7 @@ module.exports = {
         dmSans: "'DM Sans', sans-serif",
         grotesk: "'Space Grotesk', sans-serif",
         openSans: "'Open Sans', sans-serif",
+        nunitoSans: "'Nunito Sans', sans-serif",
       },
       screens: {
         xs: "360px",
