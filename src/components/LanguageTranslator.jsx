@@ -4,14 +4,10 @@ import Script from "next/script";
 import React, { useEffect, useState } from "react";
 
 const languages = [
-  { label: "English", value: "en", src: "https://flagcdn.com/h60/us.png" },
+  { label: "English", value: "en" },
   { label: "Portuguese", value: "pt", src: "https://flagcdn.com/h60/pt.png" },
-  { label: "Spanish", value: "es", src: "https://flagcdn.com/h60/es.png" },
   { label: "French", value: "fr", src: "https://flagcdn.com/h60/fr.png" },
-  { label: "German", value: "de", src: "https://flagcdn.com/h60/de.png" },
-  { label: "Italian", value: "it", src: "https://flagcdn.com/h60/it.png" },
-  { label: "Chinese", value: "zh", src: "https://flagcdn.com/h60/cn.png" },
-  { label: "Japanese", value: "ja", src: "https://flagcdn.com/h60/jp.png" },
+  { label: "Hindi", value: "hi", src: "https://flagcdn.com/h60/fr.png" },
 ];
 
 const includedLanguages = languages.map((lang) => lang.value).join(",");
