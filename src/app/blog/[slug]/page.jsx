@@ -25,7 +25,6 @@ const fetchBlogDetail = async (slug) => {
 const Blog = async ({ params }) => {
   const res = await fetchBlogDetail(params.slug);
   const blog = res?.data[0]?.attributes;
-  console.log(blog);
 
   return (
     <div className="relative bg-white isolate z-0 pb-10 md:pb-20 ">
