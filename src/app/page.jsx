@@ -1,17 +1,7 @@
-import Blogs from "@/components/Blogs";
-import HeroBanner from "@/components/HeroBanner";
-import OurProducts1 from "@/components/OurProducts1";
-import Specs from "@/components/Specs";
-import Test from "@/components/Test";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <>
-      <HeroBanner />
-      <OurProducts1 />
-      <Specs />
-      <Test />
-      <Blogs />
-    </>
-  );
-}
+const RootPage = () => {
+  redirect("/en");
+};
+
+export default RootPage;

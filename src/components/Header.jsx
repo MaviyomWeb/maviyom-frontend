@@ -9,7 +9,9 @@ import Logo from "../../public/logo.png";
 import Link from "next/link";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import Container from "./Container";
+import LocaleSwitcher from "./LocaleSwitcher";
 import Menu from "./Menu";
 import MenuMobile from "./MenuMobile";
 import TouchButton from "./TouchButton";
@@ -64,6 +66,7 @@ const Header = () => {
           <div className="flex items-center ">
             <div className="nav_actions hidden 964Screen:flex items-center gap-5 ">
               <TouchButton />
+              <LocaleSwitcher />
             </div>
 
             {/* Mobile icon start */}

@@ -4,8 +4,11 @@ import { NAV_LINKS, SUB_NAV_LINKS } from "@/constants";
 import Link from "next/link";
 import { BsChevronDown } from "react-icons/bs";
 
+import { useMessages } from "next-intl";
 import Image from "next/image";
 import { VscChromeClose } from "react-icons/vsc";
+import { useTranslations } from "use-intl";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 const MenuMobile = ({
   showCatMenu,
@@ -35,6 +38,12 @@ const MenuMobile = ({
     };
   }, [mobileMenu]); // Re-run the effect when mobileMenu changes
 
+  const messages = useMessages();
+  const t = useTranslations("Header");
+
+  const navLinks = Object.keys(messages.Header.navLinks);
+  const subNavCategories = Object.keys(messages.Header.subNavLinks);
+
   return (
     <div className="">
       <div
@@ -61,14 +70,19 @@ const MenuMobile = ({
           </div>
         </div>
 
+        <div className="flex items-center justify-between px-1">
+          <span>{t("chooseLanguage")}</span>
+          <LocaleSwitcher />
+        </div>
+
         <ul
           className={`flex flex-col gap-4 pl-2   text-secondary 
             `}
         >
-          {NAV_LINKS.map((item) => {
+          {navLinks.map((navLink) => {
             return (
-              <Fragment key={item?.id}>
-                {item?.subMenu ? (
+              <Fragment key={`${t(`navLinks.${navLink}.id`)}`}>
+                {!messages.Header.navLinks[navLink].href ? (
                   <li
                     className="relative  flex flex-col"
                     onClick={() => setShowCatMenu((prev) => !prev)}
@@ -78,7 +92,7 @@ const MenuMobile = ({
                         showCatMenu ? "text-primary" : "text-secondary"
                       } `}
                     >
-                      {item.label}
+                      {`${t(`navLinks.${navLink}.label`)}`}
                       <BsChevronDown
                         size={20}
                         className={`text-current transition-transform ease-in-out duration-200 ${
@@ -91,7 +105,7 @@ const MenuMobile = ({
 
                     {showCatMenu && (
                       <ul className={`dropdown-menu       `}>
-                        {SUB_NAV_LINKS?.map((item, index) => {
+                        {subNavCategories?.map((subNavCategory, index) => {
                           return (
                             <li className="dropdown " key={index}>
                               <div className="dropdown-inner">
@@ -101,14 +115,22 @@ const MenuMobile = ({
                             after:content-[''] after:absolute after:top-full after:left-0 after:h-[3px] after:w-8 after:bg-primary
                             "
                                   >
-                                    {item?.category}:
+                                    {t(
+                                      `subNavLinks.${subNavCategory}.category`
+                                    )}
+                                    :
                                   </h3>
-                                  {item?.productLinks?.map((product) => {
+                                  {Object.keys(
+                                    messages.Header.subNavLinks[subNavCategory]
+                                      .products
+                                  ).map((product, i) => {
                                     return (
                                       <Link
-                                        key={product?.id}
+                                        key={i}
                                         className="group/link flex items-center justify-between rounded-md p-1 border  duration-150  mb-3   "
-                                        href={product?.href}
+                                        href={t(
+                                          `subNavLinks.${subNavCategory}.products.${product}.href`
+                                        )}
                                         onClick={hideShowMenu}
                                       >
                                         <span className="flex flex-col justify-center  items-center gap-2  ">
@@ -131,8 +153,12 @@ const MenuMobile = ({
                                           </span> */}
                                           <span>
                                             <Image
-                                              src={product?.image}
-                                              alt={product?.label}
+                                              src={t(
+                                                `subNavLinks.${subNavCategory}.products.${product}.image`
+                                              )}
+                                              alt={t(
+                                                `subNavLinks.${subNavCategory}.products.${product}.label`
+                                              )}
                                               sizes="100vw"
                                               // Make the image display full width
                                               width={200}
@@ -147,10 +173,14 @@ const MenuMobile = ({
                                           </span>
                                           <span className=" flex-grow text-center">
                                             <span className="mb-1 block text-xl font-semibold text-dark group-hover/link:text-secondary ">
-                                              {product?.label}
+                                              {t(
+                                                `subNavLinks.${subNavCategory}.products.${product}.label`
+                                              )}
                                             </span>
                                             <span className="block  font-medium text-gray-600">
-                                              {product?.description}
+                                              {t(
+                                                `subNavLinks.${subNavCategory}.products.${product}.description`
+                                              )}
                                             </span>
                                           </span>
                                         </span>
@@ -168,11 +198,11 @@ const MenuMobile = ({
                 ) : (
                   <li className="cursor-pointer">
                     <Link
-                      href={item?.href}
+                      href={`${t(`navLinks.${navLink}.href`)}`}
                       onClick={hideShowMenu}
                       className=" transition-colors ease-in-out duration-150 text-lg hover:text-primary "
                     >
-                      {item.label}
+                      {`${t(`navLinks.${navLink}.label`)}`}
                     </Link>
                   </li>
                 )}

@@ -1,6 +1,10 @@
+import { useTranslations } from "next-intl";
+
 import Link from "next/link";
 
 const HeroBanner = () => {
+  const t = useTranslations("HomePage.HeroBanner");
+
   return (
     <section className="relative isolate z-0  px-6  pt-5 bg-white   lg:px-8 pb-5 md:pb-10 ">
       <div className="relative mx-auto max-w-2xl pt-5">
@@ -32,20 +36,17 @@ const HeroBanner = () => {
         </div>
         <div className="text-center">
           <h1 className="   font-semibold   tracking-tight text-secondary text-3xl xs:text-[36px] sm:text-[52px] leading-[1.1] font-poppins">
-            New Horizons: The journey with Maviyom Drones Starts Now
+            {t("title")}
           </h1>
           <p className="mt-4 md:mt-6 text-lg md:leading-8 text-gray-600">
-            Embark on an unparalleled aerial journey with Maviyom's
-            state-of-the-art drones. Precision-engineered for excellence, our
-            drones are your partners in unlocking new perspectives and
-            possibilities.
+            {t("subtitle")}
           </p>
           <div className="my-7 md:my-10 flex items-center justify-center gap-x-2">
             <Link
               href="/products"
               className="inline-flex whitespace-nowrap text-secondary text-lg border-2 border-secondary hover:text-white hover:bg-secondary  font-medium font-poppins px-6 py-2 rounded-full transition-all ease-in-out duration-200"
             >
-              Explore Now
+              {t("explore")} 
             </Link>
           </div>
         </div>

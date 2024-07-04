@@ -1,6 +1,6 @@
 import PolicySection from "./PolicySection";
 
-const PolicyDetails = ({ title, info, sections }) => {
+const PolicyDetails = ({ title, info, sections, t, messages }) => {
   return (
     <section className="max-w-[75rem] mx-auto">
       <h2
@@ -14,13 +14,18 @@ const PolicyDetails = ({ title, info, sections }) => {
       <div className="break-words ">
         <p className="mb-6 text-gray-600 text-[17px] leading-7 ">{info}</p>
 
-        {sections.map((section, index) => (
-          <PolicySection
-            key={index}
-            title={section.title}
-            content={section.content}
-          />
-        ))}
+        {sections.map((section, index) => {
+         
+          return (
+            <PolicySection
+              key={index}
+              title={t(`sections.${section}.title`)}
+              section={section}
+              messages = {messages}
+              t = {t}
+            />
+          );
+        })}
       </div>
     </section>
   );

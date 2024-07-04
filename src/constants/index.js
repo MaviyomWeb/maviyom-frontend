@@ -230,26 +230,29 @@ export const GCS_Details = [
   {
     GCS_Number: "1",
     droneSpecs: [
-      { label: "Takeoff Method", value: "VTOL" },
-      { label: "Wingspan", value: "2.5 m" },
-      { label: "Fuselage Length", value: "1.26 m" },
-      { label: "Maximum Takeoff Weight", value: "13Kg" },
-      { label: "Payload", value: "1.2 kg" },
-      { label: "Propulsion", value: "5x Brushless DC Motor" },
-      { label: "Stall Speed", value: "16 m/s" },
-      { label: "Build Material", value: "Composite" },
-      { label: "Range / Data Link", value: "25-30 km (Optional)" },
-      { label: "Flight Time", value: "120 min/1.5 kg, 150 min/1.2 kg" },
-      { label: "Operational Speed", value: "65 Km/h" },
-      { label: "Maximum Speed", value: "105 Km/h" },
-      { label: "Maximum Altitude", value: "MSL 10,000 ft" },
+      { label: "Gross Weight", value: "5.98 kg" },
+      { label: "Operating Temperature", value: "-20°C to +55°C" },
       {
-        label: "Ground Control Station (GCS) & RC",
-        value: "Rugged Single & Dual Screen Windows GCS",
+        label: "CPU",
+        value: "Intel i7 8565U (standard), Intel 10500U (upgrade for future)",
       },
+      { label: "Operating System", value: "Win7/win10/Linux" },
+      { label: "Serial Port", value: "RS232x3, SBUS in/out" },
       {
-        label: "Camera",
-        value: "Dual Senor: 30x Zoom & Thermal 640×512 pixel & LRF",
+        label: "External Interface",
+        value: "USB3.0, LAN, HDMI in, VGA out, Hi-fi",
+      },
+      { label: "Dimensions", value: "354mm (L) x 280mm (W) x 80mm (H)" },
+      {
+        label: "Display Screen",
+        value:
+          '13.3" 1920x1080, 1000 nit (top screen),/n 12.1" 1280x800, 1500 nit (bottom screen)',
+      },
+      { label: "Memory", value: "8 GB (standard), 32 GB max" },
+      { label: "Storage", value: "256 GB SSD (standard), 1 TB Max." },
+      {
+        label: "Network Port",
+        value: "WIFI/Bluetooth (standard), 4G (optional)",
       },
     ],
     images: ["/GCS_1_1.webp"], // Add image URLs or file names here
@@ -257,9 +260,9 @@ export const GCS_Details = [
   {
     GCS_Number: "2",
     droneSpecs: [
-      { label: "Gross Weight", value: "1.034 kg" },
-      { label: "Operation Temperature", value: "-10°C / +60°C" },
-      { label: "Dimensions", value: "195mm (L) x 170mm (W) x 155mm (H)" },
+      { label: "Gross Weight", value: "0.61 kg" },
+      { label: "Operation Temperature", value: "-20°C to +60°C" },
+      { label: "Dimensions", value: "195mm (L) x 170mm (W) x 115mm (H)" },
       {
         label: "Display Screen",
         value: "2.8° 240x320 high brightness colorful LCD Screen",
@@ -276,7 +279,7 @@ export const GCS_Details = [
     GCS_Number: "3",
     droneSpecs: [
       { label: "Gross Weight", value: "1.034 kg" },
-      { label: "Operation Temperature", value: "-20°C / +60°C" },
+      { label: "Operation Temperature", value: "-20°C to +60°C" },
       { label: "Dimensions", value: "272mm (L) x 183mm (W) x 94mm (H)" },
       {
         label: "Display Screen",
@@ -292,7 +295,7 @@ export const GCS_Details = [
     GCS_Number: "4",
     droneSpecs: [
       { label: "Gross Weight", value: "3.1 kg" },
-      { label: "Operation Temperature", value: "-10°C / +60°C" },
+      { label: "Operation Temperature", value: "-10°C to +60°C" },
       { label: "CPU", value: "Intel i7 5th generation 5500U" },
       { label: "Operating System", value: "Win 10" },
       {
@@ -303,7 +306,7 @@ export const GCS_Details = [
       {
         label: "Display Screen",
         value:
-          "10.1 inch + touch screen + 800cd / sunlight readable screen 1920x1200px",
+          "10.1 inch + touch screen + 800cd /n sunlight readable screen 1920x1200px",
       },
       { label: "Memory", value: "8GB" },
       { label: "Storage", value: "128GB" },

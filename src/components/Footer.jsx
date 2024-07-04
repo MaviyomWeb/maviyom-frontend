@@ -12,27 +12,23 @@ import {
 import { AiFillPhone } from "react-icons/ai";
 
 import { FOOTER_LINKS } from "@/constants";
+import { useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
 import { HiLocationMarker } from "react-icons/hi";
 
-const FOOTER_CONTACT_INFO = {
-  title: "Contact Us",
-  links: [
-    {
-      label: "Office Contact",
-      value: "(+91) 011-4563-5630",
-      icon: <AiFillPhone className="rotate-90" />,
-    },
-    { label: "Email Address", value: "info@maviyom.com", icon: <AiFillMail /> },
-    {
-      label: "Visit Office ",
-      value: "New Delhi – 110001 India.",
-      icon: <HiLocationMarker />,
-    },
-  ],
+const icons = {
+  officeContact: <AiFillPhone className="rotate-90" />,
+  emailAddress: <AiFillMail />,
+  visitOffice: <HiLocationMarker />,
 };
 
 const Footer = () => {
+  const t = useTranslations("Footer");
+  const messages = useMessages();
+
+  const footerLinks = Object.keys(messages.Footer.footerLinks);
+  const contactInfoLinks = Object.keys(messages.Footer.contactInfo.links);
+
   return (
     <>
       <footer className="relative w-full h-auto  bg-gray-900 pt-5 md:pt-10 ">
@@ -43,33 +39,37 @@ const Footer = () => {
                 <Image src="/logo.png" alt="logo" width={194} height={164} />
               </Link>
               <p className="my-4 text-[#ccc] max-w-[365px]">
-                Explore the Skies: Elevate Your Experience with Our Cutting-Edge
-                Drones – Where Technology Takes Wings!
+                {t("description")}
               </p>
             </FooterColumn>
 
-            {FOOTER_LINKS.map((column, key) => {
+            {footerLinks.map((column, index) => {
               return (
-                <FooterColumn title={column.title} key={key}>
+                <FooterColumn
+                  title={t(`footerLinks.${column}.title`)}
+                  key={index}
+                >
                   <ul>
-                    {column.links.map((link, index) => (
-                      <li key={index}>
-                        <Link
-                          href={link.href}
-                          className="inline-block text-lg text-[#ccc] mb-[10px] hover:text-white"
-                        >
-                          {link.label}
-                        </Link>
-                      </li>
-                    ))}
+                    {Object.keys(messages.Footer.footerLinks[column].links).map(
+                      (link, index) => (
+                        <li key={index}>
+                          <Link
+                            href={t(`footerLinks.${column}.links.${link}.href`)}
+                            className="inline-block text-lg text-[#ccc] mb-[10px] hover:text-white"
+                          >
+                            {t(`footerLinks.${column}.links.${link}.label`)}
+                          </Link>
+                        </li>
+                      )
+                    )}
                   </ul>
                 </FooterColumn>
               );
             })}
 
-            <FooterColumn title={FOOTER_CONTACT_INFO.title}>
+            <FooterColumn title={t("contactInfo.title")}>
               <ul className="flex flex-col gap-5  lg:gap-3">
-                {FOOTER_CONTACT_INFO.links.map((link, index) => {
+                {contactInfoLinks.map((link, index) => {
                   return (
                     <li key={index}>
                       <div className="flex items-center gap-[2px]">
@@ -78,13 +78,16 @@ const Footer = () => {
                   mr-3  rounded-full bg-primary p-2 text-xl text-white
                  "
                         >
-                          {link.icon}
+                          {icons[link]}
                         </span>
                         <div>
                           <span className="text-lg text-white font-medium lg:text-base">
-                            {link.label}
+                            {t(`contactInfo.links.${link}.label`)}
                           </span>
-                          <p className="text-[#ccc] ">{link.value}</p>
+                          <p className="text-[#ccc] ">
+                            {" "}
+                            {t(`contactInfo.links.${link}.value`)}
+                          </p>
                         </div>
                       </div>
                     </li>
@@ -100,18 +103,18 @@ const Footer = () => {
                 href="/terms-and-conditions"
                 className="cursor-pointer text-sm  text-[#eee] transition-all duration-200 hover:text-white hover:underline"
               >
-                Terms & Conditions
+                {t("termsAndConditions")}
               </Link>
               <Link
                 href="/privacy-policy"
                 className="cursor-pointer text-sm   text-[#eee] transition-all duration-200 hover:text-white hover:underline"
               >
-                Privacy Policy
+                {t("privacyPolicy")}
               </Link>
             </div>
 
             <p className=" text-sm font-medium text-[#eee] ">
-              © 2024 Copyrights by Maviyom Aviation
+              {t("copyright")}
             </p>
           </div>
         </Container>

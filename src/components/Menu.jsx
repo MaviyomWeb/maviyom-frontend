@@ -1,19 +1,26 @@
 import React, { Fragment } from "react";
 
-import { NAV_LINKS, SUB_NAV_LINKS } from "@/constants";
 import Link from "next/link";
 import { BsChevronDown } from "react-icons/bs";
 
+import { useMessages, useTranslations } from "next-intl";
 import { MdArrowForward } from "react-icons/md";
 
 const Menu = ({ showCatMenu, setShowCatMenu }) => {
+  const t = useTranslations("Header");
+  const messages = useMessages();
+
+  const navLinks = Object.keys(messages.Header.navLinks);
+  const subNavCategories = Object.keys(messages.Header.subNavLinks);
+
+
   return (
     <nav>
       <ul className="hidden 964Screen:flex items-center gap-8 font-medium text-secondary">
-        {NAV_LINKS.map((item) => {
+        {navLinks.map((navLink) => {
           return (
-            <Fragment key={item?.id}>
-              {item?.subMenu ? (
+            <Fragment key={`${t(`navLinks.${navLink}.id`)}`}>
+              {!messages.Header.navLinks[navLink].href ? (
                 <li
                   className="relative cursor-pointer  "
                   onMouseEnter={() => setShowCatMenu(true)}
@@ -24,7 +31,7 @@ const Menu = ({ showCatMenu, setShowCatMenu }) => {
                       showCatMenu ? "text-primary" : "text-secondary"
                     } `}
                   >
-                    {item.label}
+                    {`${t(`navLinks.${navLink}.label`)}`}
                     <BsChevronDown
                       size={14}
                       className={`text-current transition-transform ease-in-out duration-200 ${
@@ -43,7 +50,7 @@ const Menu = ({ showCatMenu, setShowCatMenu }) => {
                                    : "invisible top-[120%] opacity-0"
                                }`}
                   >
-                    {SUB_NAV_LINKS?.map((item, index) => {
+                    {subNavCategories.map((subNavCategory, index) => {
                       return (
                         <li className="dropdown " key={index}>
                           <div className="dropdown-inner">
@@ -52,30 +59,33 @@ const Menu = ({ showCatMenu, setShowCatMenu }) => {
                                 className="relative item-heading mt-2 mb-[6px]     text-secondary font-semibold 
                             after:content-[''] after:absolute after:top-full after:left-0 after:h-[2px] after:w-8 after:bg-primary"
                               >
-                                {item?.category}:
+                                {t(`subNavLinks.${subNavCategory}.category`)}:
                               </h3>
-                              {item?.productLinks?.map((product) => {
+
+                              {Object.keys(
+                                messages.Header.subNavLinks[subNavCategory]
+                                  .products
+                              ).map((product, i) => {
                                 return (
                                   <Link
-                                    key={product?.id}
+                                    key={i}
                                     className="group/link  flex items-center justify-between rounded-md p-3 duration-150  mb-2"
-                                    href={product?.href}
+                                    href={t(
+                                      `subNavLinks.${subNavCategory}.products.${product}.href`
+                                    )}
                                     onClick={() => setShowCatMenu(false)}
                                   >
                                     <span className="flex ">
-                                      {/* <span className="mr-4 h-10 w-28     inline-flex  rounded  ">
-                                      <img
-                                        src={product?.image}
-                                        alt={product?.label}
-                                        className="h-full w-full object-cover"
-                                      />
-                                    </span> */}
                                       <span className=" ">
                                         <span className="mb-1 block text-base font-semibold text-dark group-hover/link:text-secondary ">
-                                          {product?.label}
+                                          {t(
+                                            `subNavLinks.${subNavCategory}.products.${product}.label`
+                                          )}
                                         </span>
                                         <span className="block text-sm text-[#9597a8]">
-                                          {product?.description}
+                                          {t(
+                                            `subNavLinks.${subNavCategory}.products.${product}.description`
+                                          )}
                                         </span>
                                       </span>
                                     </span>
@@ -95,10 +105,10 @@ const Menu = ({ showCatMenu, setShowCatMenu }) => {
               ) : (
                 <li className="cursor-pointer">
                   <Link
-                    href={item?.href}
+                    href={`${t(`navLinks.${navLink}.href`)}`}
                     className=" transition-colors ease-in-out duration-150 hover:text-primary "
                   >
-                    {item.label}
+                    {`${t(`navLinks.${navLink}.label`)}`}
                   </Link>
                 </li>
               )}

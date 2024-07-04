@@ -8,7 +8,9 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import SlideButton from "./SlideButton";
 
-const ProductsCarousel = ({ products }) => {
+const ProductsCarousel = ({ products, locale }) => {
+
+
   return (
     <div className="hero-image relative max-w-3xl  mx-auto">
       <Carousel
@@ -32,8 +34,10 @@ const ProductsCarousel = ({ products }) => {
           />
         )}
       >
-        {products?.data?.map((product) => {
-          return <ProductCard1 key={product?.id} data={product} />;
+        { products?.data?.map((product) => {
+          return (
+            <ProductCard1 key={product?.id} data={product} locale={locale} />
+          );
         })}
       </Carousel>
     </div>
