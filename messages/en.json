@@ -63,21 +63,12 @@
       }
     },
     "getInTouch": "Get in Touch",
-    "chooseLanguage": "Choose a language",
-    "languageSwitcher": {
-      "languages": {
-        "en": {
-          "code": "en",
-          "name": "English",
-          "flag": "https://flagcdn.com/16x12/us.png"
-        },
-        "hi": {
-          "code": "hi",
-          "name": "Hindi",
-          "flag": "https://flagcdn.com/16x12/in.png"
-        }
-      }
-    }
+    "chooseLanguage": "Choose a language"
+   
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, hi {Hindi} en {English} other {Unknown}}"
   },
   "HomePage": {
     "HeroBanner": {

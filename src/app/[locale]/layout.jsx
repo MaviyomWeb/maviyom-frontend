@@ -36,7 +36,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
       </head>
       <body className={`${inter.className} bg-white `}>
         <NextIntlClientProvider messages={messages}>
-          <ScrollToTop />
+          {/* <ScrollToTop /> */}
 
           {/* <Navbar /> */}
 

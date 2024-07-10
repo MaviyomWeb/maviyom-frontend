@@ -15,6 +15,7 @@ import { FOOTER_LINKS } from "@/constants";
 import { useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
 import { HiLocationMarker } from "react-icons/hi";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 const icons = {
   officeContact: <AiFillPhone className="rotate-90" />,
@@ -96,6 +97,7 @@ const Footer = () => {
               </ul>
             </FooterColumn>
           </div>
+
 
           <div className="footer-bottom w-full  py-5  border-t-[1px] border-white/20 mt-3   flex flex-col  items-center justify-between gap-4 lg:flex-row lg:gap-0  ">
             <div className="flex  mt-3 md:mt-0 items-center  gap-5    xs:gap-5    md:gap-10">
