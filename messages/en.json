@@ -412,7 +412,7 @@
         "LocationsList": {
           "Head Office": {
             "Title": "Head Office",
-            "Address": "New Delhi, India"
+            "Address": "214, Second Floor, Competent House, F-Block, Middle Circle, Connaught Place, New Delhi - 110001."
           },
           "Manufacturing Facility": {
             "Title": "Manufacturing Facility",
@@ -485,7 +485,7 @@
         },
         "visitOffice": {
           "label": "Visit Office",
-          "value": "New Delhi – 110001 India."
+          "value": "214, Second Floor, Competent House, F-Block, Middle Circle, Connaught Place, New Delhi - 110001."
         }
       }
     },

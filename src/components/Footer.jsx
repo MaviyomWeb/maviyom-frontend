@@ -73,7 +73,7 @@ const Footer = () => {
                 {contactInfoLinks.map((link, index) => {
                   return (
                     <li key={index}>
-                      <div className="flex items-center gap-[2px]">
+                      <div className="flex items-start gap-[2px]">
                         <span
                           className="transition-transition-1
                   mr-3  rounded-full bg-primary p-2 text-xl text-white

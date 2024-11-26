@@ -12,7 +12,7 @@ const CTA = () => {
           >
             {t("title")}
           </h2>
-          <p className="sm:mx-auto mt-3 sm:max-w-xl  text-center text-base leading-relaxed text-gray-600">
+          <p className="sm:mx-auto mt-3 sm:max-w-xl  text-center text-base  text-gray-600">
             {t("description")}
           </p>
         </div>

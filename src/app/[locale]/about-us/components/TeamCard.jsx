@@ -14,7 +14,7 @@ const TeamCard = ({ member, t }) => {
         <h3 className="text-secondary font-poppins text-center text-lg font-semibold">
           {t(`members.${member}.name`)}
         </h3>
-        <p className="text-secondary mt-2 line-clamp overflow-hidden text-ellipsis text-justify md:text-sm font-normal leading-5">
+        <p className="text-secondary mt-2  overflow-hidden  text-justify  md:text-sm xl:text-[15px] font-normal leading-5">
           {t(`members.${member}.description`)}
         </p>
       </div>
